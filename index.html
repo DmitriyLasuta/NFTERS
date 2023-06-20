@@ -1,0 +1,1746 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="shortcut icon"
+			href="./src/assets/icons/favicon.ico"
+			type="image/x-icon"
+		/>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="./src/styles/index.min.css" />
+
+		<title>NFT Market Place</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__content">
+					<a class="header__logo" href="#">NFters</a>
+
+					<button
+						class="header__menu-burger"
+						aria-label="navigation menu"
+						type="button"
+					>
+						<span class="header__menu-burger-line" role="presentation"></span>
+					</button>
+
+					<nav class="header__nav" aria-label="site navigation">
+						<ul class="header__nav-list">
+							<li class="header__nav-item">
+								<a href="#" class="header__nav-link">Marketplace</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#" class="header__nav-link">Resource</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#" class="header__nav-link">About</a>
+							</li>
+						</ul>
+					</nav>
+
+					<form class="header__search-form" method="get">
+						<input
+							class="header__search-inp"
+							type="search"
+							name="search"
+							placeholder="Search"
+						/>
+						<button class="header__search-btn" type="submit">
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="#757575"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M11.5 21.75C5.85 21.75 1.25 17.15 1.25 11.5C1.25 5.85 5.85 1.25 11.5 1.25C17.15 1.25 21.75 5.85 21.75 11.5C21.75 17.15 17.15 21.75 11.5 21.75ZM11.5 2.75C6.67 2.75 2.75 6.68 2.75 11.5C2.75 16.32 6.67 20.25 11.5 20.25C16.33 20.25 20.25 16.32 20.25 11.5C20.25 6.68 16.33 2.75 11.5 2.75Z"
+									fill="inherit"
+								/>
+								<path
+									d="M22.0004 22.7499C21.8104 22.7499 21.6204 22.6799 21.4704 22.5299L19.4704 20.5299C19.1804 20.2399 19.1804 19.7599 19.4704 19.4699C19.7604 19.1799 20.2404 19.1799 20.5304 19.4699L22.5304 21.4699C22.8204 21.7599 22.8204 22.2399 22.5304 22.5299C22.3804 22.6799 22.1904 22.7499 22.0004 22.7499Z"
+									fill="inherit"
+								/>
+							</svg>
+						</button>
+					</form>
+
+					<div class="header__buttons">
+						<button class="button" type="button">Upload</button>
+						<button class="button button--transparent" type="button">
+							Connect Wallet
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<section class="presentation">
+				<div class="container">
+					<div class="presentation__content">
+						<div class="presentation__description">
+							<h1 class="presentation__description-title">
+								Discover, and collect Digital Art NFTs
+							</h1>
+							<p class="presentation__description-subtitle">
+								Digital marketplace for crypto collectibles and non-fungible
+								tokens (NFTs). Buy, Sell, and discover exclusive digital assets.
+							</p>
+
+							<button class="button" type="button">Explore Now</button>
+							<ul class="presentation__description-characteristic-list">
+								<li class="presentation__characteristic-item">
+									<p class="presentation__characteristic-value">98k+</p>
+									<p class="presentation__characteristic-label">Artwork</p>
+								</li>
+								<li class="presentation__characteristic-item">
+									<p class="presentation__characteristic-value">12k+</p>
+									<p class="presentation__characteristic-label">Auction</p>
+								</li>
+								<li class="presentation__characteristic-item">
+									<p class="presentation__characteristic-value">15k+</p>
+									<p class="presentation__characteristic-label">Artist</p>
+								</li>
+							</ul>
+						</div>
+						<div class="presentation__promo">
+							<div class="presentation__promo-details">
+								<h3 class="presentation__promo-details-title">
+									Abstr Gradient NFT
+								</h3>
+								<div class="presentation__promo-details-seller">
+									<img
+										class="owner-photo"
+										src="./src/assets/images/owner-photo.png"
+										alt="photo Arkhan17"
+										width="32"
+										height="32"
+									/>
+									<p class="presentation__promo-details-seller-name">
+										Arkhan17
+									</p>
+								</div>
+
+								<div class="presentation__promo-bid">
+									<p class="presentation__promo-bid-label">Current Bid</p>
+									<div class="price-label">
+										<svg
+											width="13"
+											height="22"
+											viewBox="0 0 13 22"
+											fill="currentColor"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"
+												fill="inherit"
+											/>
+										</svg>
+										<span class="price-label__text">0.25 ETH</span>
+									</div>
+									<p class="presentation__promo-duration-label">Ends in</p>
+									<time
+										class="presentation__promo-duration-time"
+										datetime="12:43:42"
+										>12h 43m 42s</time
+									>
+								</div>
+							</div>
+
+							<img
+								class="presentation__promo-img"
+								src="./src/assets/images/presentation/presentation-image-1.jpg"
+								alt="promo image"
+								width="400"
+								height="440"
+							/>
+							<img
+								class="presentation__promo-img"
+								src="./src/assets/images/presentation/presentation-image-2.jpg"
+								alt=""
+							/>
+							<img
+								class="presentation__promo-img"
+								src="./src/assets/images/presentation/presentation-image-3.jpg"
+								alt=""
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="our-advantages">
+				<div class="container">
+					<div class="our-advantages__content-box">
+						<h2 class="our-advantages__title">
+							The amazing NFT art of the world here
+						</h2>
+
+						<article class="our-advantages__item">
+							<img
+								class="our-advantages__item-image"
+								src="./src/assets/images/our-advantages/fast-transition.svg"
+								alt=""
+							/>
+							<h3 class="our-advantages__item-title">Fast Transaction</h3>
+							<p class="our-advantages__item-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+								etiam viverra tellus imperdiet.
+							</p>
+						</article>
+
+						<article class="our-advantages__item">
+							<img
+								class="our-advantages__item-image"
+								src="./src/assets/images/our-advantages/growth-transaction.svg"
+								alt=""
+							/>
+							<h3 class="our-advantages__item-title">Growth Transaction</h3>
+							<p class="our-advantages__item-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+								etiam viverra tellus
+							</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="finished-collections">
+				<h2 class="finished-collections__title">NFT Collection over</h2>
+				<div class="container">
+					<div class="finished-collections__content-box">
+						<div class="finished-collections__users-collections">
+							<div class="finished-collections__more-complete">
+								<img
+									class="finished-collections__image"
+									src="./src/assets/images/finished-collections/image-from-collection-1.png"
+									alt="NFT from user collection"
+								/>
+								<div class="finished-collections__more-complete-info">
+									<img
+										class="finished-collections__owner-photo"
+										src="./src/assets/images/owner-photo.png"
+										alt="Owner photo"
+									/>
+									<div class="finished-collections__more-complete-user-data">
+										<p class="finished-collections__owner-username">
+											The Futr Abstr
+										</p>
+										<p class="finished-collections__items-in-stock">
+											10 in the stock
+										</p>
+									</div>
+
+									<div class="finished-collections__more-complete-info-bid">
+										<div class="finished-collections__more-complete-bid-title">
+											Highest Bid
+										</div>
+										<div class="price-label">
+											<svg
+												width="13"
+												height="22"
+												viewBox="0 0 13 22"
+												fill="currentColor"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"
+													fill="inherit"
+												/>
+											</svg>
+											<span class="price-label__text">0.25 ETH</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="finished-collections__user-collection">
+								<img
+									class="finished-collections__image"
+									src="./src/assets/images/finished-collections/image-from-collection-2.png"
+									alt="NFT from user collection"
+								/>
+								<div class="finished-collections__user-collection-info">
+									<p class="finished-collections__owner-username">
+										The Futr Abstr
+									</p>
+									<div class="finished-collections__user-collection-details">
+										<img
+											class="finished-collections__owner-photo"
+											src="./src/assets/images/owner-photo.png"
+											alt="Owner photo"
+											width="34"
+											height="34"
+										/>
+										<div class="price-label">
+											<svg
+												width="13"
+												height="22"
+												viewBox="0 0 13 22"
+												fill="currentColor"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"
+													fill="inherit"
+												/>
+											</svg>
+											<span class="price-label__text">0.25 ETH</span>
+										</div>
+										<p class="finished-collections__items-in-stock">1 of 8</p>
+									</div>
+									<button class="button button--transparent" type="button">
+										Place a bid
+									</button>
+								</div>
+							</div>
+							<div class="finished-collections__user-collection">
+								<img
+									class="finished-collections__image"
+									src="./src/assets/images/finished-collections/image-from-collection-3.png"
+									alt="NFT from user collection"
+								/>
+								<div class="finished-collections__user-collection-info">
+									<p class="finished-collections__owner-username">
+										The Futr Abstr
+									</p>
+									<div class="finished-collections__user-collection-details">
+										<img
+											class="finished-collections__owner-photo"
+											src="./src/assets/images/owner-photo.png"
+											alt="Owner photo"
+											width="34"
+											height="34"
+										/>
+										<div class="price-label">
+											<svg
+												width="13"
+												height="22"
+												viewBox="0 0 13 22"
+												fill="currentColor"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"
+													fill="inherit"
+												/>
+											</svg>
+											<span class="price-label__text">0.25 ETH</span>
+										</div>
+										<p class="finished-collections__items-in-stock">1 of 8</p>
+									</div>
+									<button class="button button--transparent" type="button">
+										Place a bid
+									</button>
+								</div>
+							</div>
+							<div class="finished-collections__user-collection">
+								<img
+									class="finished-collections__image"
+									src="./src/assets/images/finished-collections/image-from-collection-4.png"
+									alt="NFT from user collection"
+								/>
+								<div class="finished-collections__user-collection-info">
+									<p class="finished-collections__owner-username">
+										The Futr Abstr
+									</p>
+									<div class="finished-collections__user-collection-details">
+										<img
+											class="finished-collections__owner-photo"
+											src="./src/assets/images/owner-photo.png"
+											alt="Owner photo"
+											width="34"
+											height="34"
+										/>
+										<div class="price-label">
+											<svg
+												width="13"
+												height="22"
+												viewBox="0 0 13 22"
+												fill="currentColor"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"
+													fill="inherit"
+												/>
+											</svg>
+											<span class="price-label__text">0.25 ETH</span>
+										</div>
+										<p class="finished-collections__items-in-stock">1 of 8</p>
+									</div>
+									<button class="button button--transparent" type="button">
+										Place a bid
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="finished-collections__top-collections">
+							<h3 class="finished-collections__top-collections-title">
+								Top Collections over
+							</h3>
+							<p class="finished-collections__top-collections-period">
+								Last 7 days
+							</p>
+							<ol class="finished-collections__top-collections-list">
+								<li class="finished-collections__top-collections-list-item">
+									<img
+										class="finished-collections__owner-photo"
+										src="./src/assets/images/finished-collections/top-collections-woner-photo-1.png"
+										alt="Owner photo"
+									/>
+									<div
+										class="finished-collections__top-collections-user-details"
+									>
+										<p class="finished-collections__owner-username">
+											CryptoFunks
+										</p>
+										<div class="price-label">
+											<svg
+												width="13"
+												height="22"
+												viewBox="0 0 13 22"
+												fill="currentColor"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"
+													fill="inherit"
+												/>
+											</svg>
+											<span class="price-label__text">19,769.39</span>
+										</div>
+									</div>
+									<p class="finished-collections__owner-wallet-growth">
+										+26.52%
+									</p>
+								</li>
+								<li class="finished-collections__top-collections-list-item">
+									<img
+										class="finished-collections__owner-photo"
+										src="./src/assets/images/finished-collections/top-collections-woner-photo-2.png"
+										alt="Owner photo"
+									/>
+									<div
+										class="finished-collections__top-collections-user-details"
+									>
+										<p class="finished-collections__owner-username">Cryptix</p>
+										<div class="price-label">
+											<svg
+												width="13"
+												height="22"
+												viewBox="0 0 13 22"
+												fill="currentColor"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"
+													fill="inherit"
+												/>
+											</svg>
+											<span class="price-label__text">2,769.39</span>
+										</div>
+									</div>
+									<p
+										class="finished-collections__owner-wallet-growth finished-collections__owner-wallet-growth--red"
+									>
+										+10.52%
+									</p>
+								</li>
+								<li class="finished-collections__top-collections-list-item">
+									<img
+										class="finished-collections__owner-photo"
+										src="./src/assets/images/finished-collections/top-collections-woner-photo-3.png"
+										alt="Owner photo"
+									/>
+									<div
+										class="finished-collections__top-collections-user-details"
+									>
+										<p class="finished-collections__owner-username">
+											Frensware
+										</p>
+										<div class="price-label">
+											<svg
+												width="13"
+												height="22"
+												viewBox="0 0 13 22"
+												fill="currentColor"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"
+													fill="inherit"
+												/>
+											</svg>
+											<span class="price-label__text">9,232.39</span>
+										</div>
+									</div>
+									<p class="finished-collections__owner-wallet-growth">
+										+2.52%
+									</p>
+								</li>
+								<li class="finished-collections__top-collections-list-item">
+									<img
+										class="finished-collections__owner-photo"
+										src="./src/assets/images/finished-collections/top-collections-woner-photo-4.png"
+										alt="Owner photo"
+									/>
+									<div
+										class="finished-collections__top-collections-user-details"
+									>
+										<p class="finished-collections__owner-username">PunkArt</p>
+										<div class="price-label">
+											<svg
+												width="13"
+												height="22"
+												viewBox="0 0 13 22"
+												fill="currentColor"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"
+													fill="inherit"
+												/>
+											</svg>
+											<span class="price-label__text">3,769.39</span>
+										</div>
+									</div>
+									<p class="finished-collections__owner-wallet-growth">
+										+1.52%
+									</p>
+								</li>
+								<li class="finished-collections__top-collections-list-item">
+									<img
+										class="finished-collections__owner-photo"
+										src="./src/assets/images/finished-collections/top-collections-woner-photo-5.png"
+										alt="Owner photo"
+									/>
+									<div
+										class="finished-collections__top-collections-user-details"
+									>
+										<p class="finished-collections__owner-username">
+											Art Crypto
+										</p>
+										<div class="price-label">
+											<svg
+												width="13"
+												height="22"
+												viewBox="0 0 13 22"
+												fill="currentColor"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"
+													fill="inherit"
+												/>
+											</svg>
+											<span class="price-label__text">10,769.39</span>
+										</div>
+									</div>
+									<p
+										class="finished-collections__owner-wallet-growth finished-collections__owner-wallet-growth--red"
+									>
+										+2.52%
+									</p>
+								</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="presentation-of-collections">
+				<div class="container">
+					<h2 class="presentation-of-collections__title">
+						Collection Featured NFTs
+					</h2>
+					<div class="presentation-of-collections__content-box">
+						<div class="presentation-of-collections__collection">
+							<div class="presentation-of-collections__collection-images">
+								<img
+									class="presentation-of-collections__collection-image"
+									src="./src/assets/images/presentation-of-collection/image-from-collection-1.png"
+									alt="NFT from collection"
+									width="266"
+									height="273"
+								/>
+								<img
+									class="presentation-of-collections__collection-image"
+									src="./src/assets/images/presentation-of-collection/image-from-collection-2.png"
+									alt="NFT from collection"
+									width="104"
+									height="86"
+								/>
+								<img
+									class="presentation-of-collections__collection-image"
+									src="./src/assets/images/presentation-of-collection/image-from-collection-3.png"
+									alt="NFT from collection"
+									width="104"
+									height="86"
+								/>
+								<img
+									class="presentation-of-collections__collection-image"
+									src="./src/assets/images/presentation-of-collection/image-from-collection-4.png"
+									alt="NFT from collection"
+									width="104"
+									height="86"
+								/>
+							</div>
+							<div class="presentation-of-collections__collection-info">
+								<h3 class="presentation-of-collections__collection-title">
+									Amazing Collection
+								</h3>
+								<div class="presentation-of-collections__collection-owner">
+									<img
+										class="finished-collections__owner-photo"
+										src="./src/assets/images/owner-photo.png"
+										alt="Owner photo"
+										width="28"
+									/>
+									<p
+										class="presentation-of-collections__collection-owner-username"
+									>
+										by Arkhan
+									</p>
+									<button class="button button--transparent">
+										Total 54 Items
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="presentation-of-collections__collection">
+							<div class="presentation-of-collections__collection-images">
+								<img
+									class="presentation-of-collections__collection-image"
+									src="./src/assets/images/presentation-of-collection/image-from-collection-5.png"
+									alt="NFT from collection"
+									width="266"
+									height="273"
+								/>
+								<img
+									class="presentation-of-collections__collection-image"
+									src="./src/assets/images/presentation-of-collection/image-from-collection-6.png"
+									alt="NFT from collection"
+									width="104"
+									height="86"
+								/>
+								<img
+									class="presentation-of-collections__collection-image"
+									src="./src/assets/images/presentation-of-collection/image-from-collection-7.png"
+									alt="NFT from collection"
+									width="104"
+									height="86"
+								/>
+								<img
+									class="presentation-of-collections__collection-image"
+									src="./src/assets/images/presentation-of-collection/image-from-collection-8.png"
+									alt="NFT from collection"
+									width="104"
+									height="86"
+								/>
+							</div>
+							<div class="presentation-of-collections__collection-info">
+								<h3 class="presentation-of-collections__collection-title">
+									Amazing Collection
+								</h3>
+								<div class="presentation-of-collections__collection-owner">
+									<img
+										class="finished-collections__owner-photo"
+										src="./src/assets/images/owner-photo.png"
+										alt="Owner photo"
+										width="28"
+									/>
+									<p
+										class="presentation-of-collections__collection-owner-username"
+									>
+										by Arkhan
+									</p>
+									<button class="button button--transparent">
+										Total 54 Items
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="presentation-of-collections__collection">
+							<div class="presentation-of-collections__collection-images">
+								<img
+									class="presentation-of-collections__collection-image"
+									src="./src/assets/images/presentation-of-collection/image-from-collection-9.png"
+									alt="NFT from collection"
+									width="266"
+									height="273"
+								/>
+								<img
+									class="presentation-of-collections__collection-image"
+									src="./src/assets/images/presentation-of-collection/image-from-collection-10.png"
+									alt="NFT from collection"
+									width="104"
+									height="86"
+								/>
+								<img
+									class="presentation-of-collections__collection-image"
+									src="./src/assets/images/presentation-of-collection/image-from-collection-11.png"
+									alt="NFT from collection"
+									width="104"
+									height="86"
+								/>
+								<img
+									class="presentation-of-collections__collection-image"
+									src="./src/assets/images/presentation-of-collection/image-from-collection-12.png"
+									alt="NFT from collection"
+									width="104"
+									height="86"
+								/>
+							</div>
+							<div class="presentation-of-collections__collection-info">
+								<h3 class="presentation-of-collections__collection-title">
+									Amazing Collection
+								</h3>
+								<div class="presentation-of-collections__collection-owner">
+									<img
+										class="finished-collections__owner-photo"
+										src="./src/assets/images/owner-photo.png"
+										alt="Owner photo"
+										width="28"
+										height="28"
+									/>
+									<p
+										class="presentation-of-collections__collection-owner-username"
+									>
+										by Arkhan
+									</p>
+									<button class="button button--transparent" type="button">
+										Total 54 Items
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="sing-up-nft">
+				<div class="container">
+					<div class="sing-up-nft__content-box">
+						<div class="sing-up-nft__presentation-images">
+							<img
+								class="sing-up-nft__presentation-image"
+								src="./src/assets/images/presentation/presentation-image-1.jpg"
+								alt=""
+								width="300"
+								height="300"
+							/>
+							<img
+								class="sing-up-nft__presentation-image"
+								src="./src/assets/images/presentation/presentation-image-2.jpg"
+								alt=""
+								width="241"
+								height="265"
+							/>
+
+							<img
+								class="sing-up-nft__presentation-image"
+								src="./src/assets/images/presentation/presentation-image-3.jpg"
+								alt=""
+								width="195"
+								height="214"
+							/>
+						</div>
+
+						<div class="sing-up-nft__content">
+							<h2 class="sing-up-nft__content-title">
+								Create and sell your NFTs
+							</h2>
+							<p class="sing-up-nft__content-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Facilisi ac phasellus placerat a pellentesque tellus sed
+								egestas. Et tristique dictum sit tristique sed non. Lacinia
+								lorem id consectetur pretium diam ut. Pellentesque eu sit
+								blandit fringilla risus faucibus.
+							</p>
+							<button class="button">Sign Up Now</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="discover-nft">
+				<div class="container">
+					<h2 class="discover-nft__title">Discover more NFTs</h2>
+					<nav class="discover-nft__categories" aria-label="categories">
+						<ul class="discover-nft__categories-list">
+							<li class="discover-nft__categories-list-item">
+								<a href="discover-nft__categories-link">All Categories</a>
+							</li>
+							<li class="discover-nft__categories-list-item">
+								<a href="discover-nft__categories-link">art </a>
+							</li>
+							<li class="discover-nft__categories-list-item">
+								<a href="discover-nft__categories-link">Celebrities</a>
+							</li>
+							<li class="discover-nft__categories-list-item">
+								<a href="discover-nft__categories-link">sport </a>
+							</li>
+							<li class="discover-nft__categories-list-item">
+								<a href="discover-nft__categories-link">music</a>
+							</li>
+							<li class="discover-nft__categories-list-item">
+								<a href="discover-nft__categories-link">Crypto</a>
+							</li>
+							<li class="discover-nft__categories-list-item">
+								<a href="discover-nft__categories-link">All Filters</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="discover-nft__content-box">
+						<div class="discover-nft__card">
+							<img
+								class="discover-nft__card-image"
+								src="./src/assets/images/discover-nft/NFT-image-1.png"
+								alt="NFT image"
+								height="222"
+							/>
+							<div class="discover-nft__card-users-photos">
+								<img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-1.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-2.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-3.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-4.png"
+									alt=""
+								/>
+							</div>
+							<h3 class="discover-nft__card-title">ArtCrypto</h3>
+							<div class="discover-nft__card-info">
+								<div class="price-label">
+									<svg
+										width="8"
+										height="15"
+										viewBox="0 0 13 22"
+										fill="currentColor"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"
+											fill="inherit"
+										/>
+									</svg>
+									<span class="price-label__text">0.25 ETH</span>
+								</div>
+								<p class="discover-nft__card-info-in-stock">1 of 321</p>
+							</div>
+							<div class="discover-nft__card-bid">
+								<time class="discover-nft__card-bid-time" datetime="03:50:02"
+									>3h 50m 2s left</time
+								>
+								<a class="discover-nft__card-bid-link" href="#">Place a bid</a>
+							</div>
+						</div>
+						<div class="discover-nft__card">
+							<img
+								class="discover-nft__card-image"
+								src="./src/assets/images/discover-nft/NFT-image-2.png"
+								alt="NFT image"
+								height="222"
+							/>
+							<div class="discover-nft__card-users-photos">
+								<img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-1.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-2.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-3.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-4.png"
+									alt=""
+								/>
+							</div>
+							<h3 class="discover-nft__card-title">This NFT</h3>
+							<div class="discover-nft__card-info">
+								<div class="price-label">
+									<svg
+										width="8"
+										height="15"
+										viewBox="0 0 13 22"
+										fill="currentColor"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"
+											fill="inherit"
+										/>
+									</svg>
+									<span class="price-label__text">0.25 ETH</span>
+								</div>
+								<p class="discover-nft__card-info-in-stock">1 of 321</p>
+							</div>
+							<div class="discover-nft__card-bid">
+								<time class="discover-nft__card-bid-time" datetime="03:50:02"
+									>3h 50m 2s left</time
+								>
+								<a class="discover-nft__card-bid-link" href="#">Place a bid</a>
+							</div>
+						</div>
+						<div class="discover-nft__card">
+							<img
+								class="discover-nft__card-image"
+								src="./src/assets/images/discover-nft/NFT-image-3.png"
+								alt="NFT image"
+								height="222"
+							/>
+							<div class="discover-nft__card-users-photos">
+								<img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-1.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-2.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-3.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-4.png"
+									alt=""
+								/>
+							</div>
+							<h3 class="discover-nft__card-title">NameCrypto</h3>
+							<div class="discover-nft__card-info">
+								<div class="price-label">
+									<svg
+										width="8"
+										height="15"
+										viewBox="0 0 13 22"
+										fill="currentColor"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"
+											fill="inherit"
+										/>
+									</svg>
+									<span class="price-label__text">0.25 ETH</span>
+								</div>
+								<p class="discover-nft__card-info-in-stock">1 of 321</p>
+							</div>
+							<div class="discover-nft__card-bid">
+								<time class="discover-nft__card-bid-time" datetime="03:50:02"
+									>3h 50m 2s left</time
+								>
+								<a class="discover-nft__card-bid-link" href="#">Place a bid</a>
+							</div>
+						</div>
+						<div class="discover-nft__card">
+							<img
+								class="discover-nft__card-image"
+								src="./src/assets/images/discover-nft/NFT-image-4.png"
+								alt="NFT image"
+								height="222"
+							/>
+							<div class="discover-nft__card-users-photos">
+								<img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-1.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-2.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-3.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-4.png"
+									alt=""
+								/>
+							</div>
+							<h3 class="discover-nft__card-title">KingCrypto</h3>
+							<div class="discover-nft__card-info">
+								<div class="price-label">
+									<svg
+										width="8"
+										height="15"
+										viewBox="0 0 13 22"
+										fill="currentColor"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"
+											fill="inherit"
+										/>
+									</svg>
+									<span class="price-label__text">0.25 ETH</span>
+								</div>
+								<p class="discover-nft__card-info-in-stock">1 of 321</p>
+							</div>
+							<div class="discover-nft__card-bid">
+								<time class="discover-nft__card-bid-time" datetime="03:50:02"
+									>3h 50m 2s left</time
+								>
+								<a class="discover-nft__card-bid-link" href="#">Place a bid</a>
+							</div>
+						</div>
+
+						<div class="discover-nft__card">
+							<img
+								class="discover-nft__card-image"
+								src="./src/assets/images/discover-nft/NFT-image-4.png"
+								alt="NFT image"
+								height="222"
+							/>
+							<div class="discover-nft__card-users-photos">
+								<img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-1.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-2.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-3.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-4.png"
+									alt=""
+								/>
+							</div>
+							<h3 class="discover-nft__card-title">ArtCrypto</h3>
+							<div class="discover-nft__card-info">
+								<div class="price-label">
+									<svg
+										width="8"
+										height="15"
+										viewBox="0 0 13 22"
+										fill="currentColor"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"
+											fill="inherit"
+										/>
+									</svg>
+									<span class="price-label__text">0.25 ETH</span>
+								</div>
+								<p class="discover-nft__card-info-in-stock">1 of 321</p>
+							</div>
+							<div class="discover-nft__card-bid">
+								<time class="discover-nft__card-bid-time" datetime="03:50:02"
+									>3h 50m 2s left</time
+								>
+								<a class="discover-nft__card-bid-link" href="#">Place a bid</a>
+							</div>
+						</div>
+						<div class="discover-nft__card">
+							<img
+								class="discover-nft__card-image"
+								src="./src/assets/images/discover-nft/NFT-image-3.png"
+								alt="NFT image"
+								height="222"
+							/>
+							<div class="discover-nft__card-users-photos">
+								<img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-1.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-2.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-3.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-4.png"
+									alt=""
+								/>
+							</div>
+							<h3 class="discover-nft__card-title">This NFT</h3>
+							<div class="discover-nft__card-info">
+								<div class="price-label">
+									<svg
+										width="8"
+										height="15"
+										viewBox="0 0 13 22"
+										fill="currentColor"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"
+											fill="inherit"
+										/>
+									</svg>
+									<span class="price-label__text">0.25 ETH</span>
+								</div>
+								<p class="discover-nft__card-info-in-stock">1 of 321</p>
+							</div>
+							<div class="discover-nft__card-bid">
+								<time class="discover-nft__card-bid-time" datetime="03:50:02"
+									>3h 50m 2s left</time
+								>
+								<a class="discover-nft__card-bid-link" href="#">Place a bid</a>
+							</div>
+						</div>
+						<div class="discover-nft__card">
+							<img
+								class="discover-nft__card-image"
+								src="./src/assets/images/discover-nft/NFT-image-2.png"
+								alt="NFT image"
+								height="222"
+							/>
+							<div class="discover-nft__card-users-photos">
+								<img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-1.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-2.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-3.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-4.png"
+									alt=""
+								/>
+							</div>
+							<h3 class="discover-nft__card-title">NameCrypto</h3>
+							<div class="discover-nft__card-info">
+								<div class="price-label">
+									<svg
+										width="8"
+										height="15"
+										viewBox="0 0 13 22"
+										fill="currentColor"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"
+											fill="inherit"
+										/>
+									</svg>
+									<span class="price-label__text">0.25 ETH</span>
+								</div>
+								<p class="discover-nft__card-info-in-stock">1 of 321</p>
+							</div>
+							<div class="discover-nft__card-bid">
+								<time class="discover-nft__card-bid-time" datetime="03:50:02"
+									>3h 50m 2s left</time
+								>
+								<a class="discover-nft__card-bid-link" href="#">Place a bid</a>
+							</div>
+						</div>
+						<div class="discover-nft__card">
+							<img
+								class="discover-nft__card-image"
+								src="./src/assets/images/discover-nft/NFT-image-1.png"
+								alt="NFT image"
+								height="222"
+							/>
+							<div class="discover-nft__card-users-photos">
+								<img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-1.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-2.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-3.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-4.png"
+									alt=""
+								/>
+							</div>
+							<h3 class="discover-nft__card-title">KingCrypto</h3>
+							<div class="discover-nft__card-info">
+								<div class="price-label">
+									<svg
+										width="8"
+										height="15"
+										viewBox="0 0 13 22"
+										fill="currentColor"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"
+											fill="inherit"
+										/>
+									</svg>
+									<span class="price-label__text">0.25 ETH</span>
+								</div>
+								<p class="discover-nft__card-info-in-stock">1 of 321</p>
+							</div>
+							<div class="discover-nft__card-bid">
+								<time class="discover-nft__card-bid-time" datetime="03:50:02"
+									>3h 50m 2s left</time
+								>
+								<a class="discover-nft__card-bid-link" href="#">Place a bid</a>
+							</div>
+						</div>
+
+						<div class="discover-nft__card">
+							<img
+								class="discover-nft__card-image"
+								src="./src/assets/images/discover-nft/NFT-image-1.png"
+								alt="NFT image"
+								height="222"
+							/>
+							<div class="discover-nft__card-users-photos">
+								<img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-1.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-2.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-3.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-4.png"
+									alt=""
+								/>
+							</div>
+							<h3 class="discover-nft__card-title">ArtCrypto</h3>
+							<div class="discover-nft__card-info">
+								<div class="price-label">
+									<svg
+										width="8"
+										height="15"
+										viewBox="0 0 13 22"
+										fill="currentColor"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"
+											fill="inherit"
+										/>
+									</svg>
+									<span class="price-label__text">0.25 ETH</span>
+								</div>
+								<p class="discover-nft__card-info-in-stock">1 of 321</p>
+							</div>
+							<div class="discover-nft__card-bid">
+								<time class="discover-nft__card-bid-time" datetime="03:50:02"
+									>3h 50m 2s left</time
+								>
+								<a class="discover-nft__card-bid-link" href="#">Place a bid</a>
+							</div>
+						</div>
+						<div class="discover-nft__card">
+							<img
+								class="discover-nft__card-image"
+								src="./src/assets/images/discover-nft/NFT-image-2.png"
+								alt="NFT image"
+								height="222"
+							/>
+							<div class="discover-nft__card-users-photos">
+								<img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-1.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-2.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-3.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-4.png"
+									alt=""
+								/>
+							</div>
+							<h3 class="discover-nft__card-title">This NFT</h3>
+							<div class="discover-nft__card-info">
+								<div class="price-label">
+									<svg
+										width="8"
+										height="15"
+										viewBox="0 0 13 22"
+										fill="currentColor"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"
+											fill="inherit"
+										/>
+									</svg>
+									<span class="price-label__text">0.25 ETH</span>
+								</div>
+								<p class="discover-nft__card-info-in-stock">1 of 321</p>
+							</div>
+							<div class="discover-nft__card-bid">
+								<time class="discover-nft__card-bid-time" datetime="03:50:02"
+									>3h 50m 2s left</time
+								>
+								<a class="discover-nft__card-bid-link" href="#">Place a bid</a>
+							</div>
+						</div>
+						<div class="discover-nft__card">
+							<img
+								class="discover-nft__card-image"
+								src="./src/assets/images/discover-nft/NFT-image-3.png"
+								alt="NFT image"
+								height="222"
+							/>
+							<div class="discover-nft__card-users-photos">
+								<img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-1.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-2.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-3.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-4.png"
+									alt=""
+								/>
+							</div>
+							<h3 class="discover-nft__card-title">NameCrypto</h3>
+							<div class="discover-nft__card-info">
+								<div class="price-label">
+									<svg
+										width="8"
+										height="15"
+										viewBox="0 0 13 22"
+										fill="currentColor"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"
+											fill="inherit"
+										/>
+									</svg>
+									<span class="price-label__text">0.25 ETH</span>
+								</div>
+								<p class="discover-nft__card-info-in-stock">1 of 321</p>
+							</div>
+							<div class="discover-nft__card-bid">
+								<time class="discover-nft__card-bid-time" datetime="03:50:02"
+									>3h 50m 2s left</time
+								>
+								<a class="discover-nft__card-bid-link" href="#">Place a bid</a>
+							</div>
+						</div>
+						<div class="discover-nft__card">
+							<img
+								class="discover-nft__card-image"
+								src="./src/assets/images/discover-nft/NFT-image-4.png"
+								alt="NFT image"
+								height="222"
+							/>
+							<div class="discover-nft__card-users-photos">
+								<img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-1.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-2.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-3.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-4.png"
+									alt=""
+								/>
+							</div>
+							<h3 class="discover-nft__card-title">KingCrypto</h3>
+							<div class="discover-nft__card-info">
+								<div class="price-label">
+									<svg
+										width="8"
+										height="15"
+										viewBox="0 0 13 22"
+										fill="currentColor"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"
+											fill="inherit"
+										/>
+									</svg>
+									<span class="price-label__text">0.25 ETH</span>
+								</div>
+								<p class="discover-nft__card-info-in-stock">1 of 321</p>
+							</div>
+							<div class="discover-nft__card-bid">
+								<time class="discover-nft__card-bid-time" datetime="03:50:02"
+									>3h 50m 2s left</time
+								>
+								<a class="discover-nft__card-bid-link" href="#">Place a bid</a>
+							</div>
+						</div>
+
+						<div class="discover-nft__card">
+							<img
+								class="discover-nft__card-image"
+								src="./src/assets/images/discover-nft/NFT-image-1.png"
+								alt="NFT image"
+								height="222"
+							/>
+							<div class="discover-nft__card-users-photos">
+								<img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-1.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-2.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-3.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-4.png"
+									alt=""
+								/>
+							</div>
+							<h3 class="discover-nft__card-title">ArtCrypto</h3>
+							<div class="discover-nft__card-info">
+								<div class="price-label">
+									<svg
+										width="8"
+										height="15"
+										viewBox="0 0 13 22"
+										fill="currentColor"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"
+											fill="inherit"
+										/>
+									</svg>
+									<span class="price-label__text">0.25 ETH</span>
+								</div>
+								<p class="discover-nft__card-info-in-stock">1 of 321</p>
+							</div>
+							<div class="discover-nft__card-bid">
+								<time class="discover-nft__card-bid-time" datetime="03:50:02"
+									>3h 50m 2s left</time
+								>
+								<a class="discover-nft__card-bid-link" href="#">Place a bid</a>
+							</div>
+						</div>
+						<div class="discover-nft__card">
+							<img
+								class="discover-nft__card-image"
+								src="./src/assets/images/discover-nft/NFT-image-2.png"
+								alt="NFT image"
+								height="222"
+							/>
+							<div class="discover-nft__card-users-photos">
+								<img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-1.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-2.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-3.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-4.png"
+									alt=""
+								/>
+							</div>
+							<h3 class="discover-nft__card-title">This NFT</h3>
+							<div class="discover-nft__card-info">
+								<div class="price-label">
+									<svg
+										width="8"
+										height="15"
+										viewBox="0 0 13 22"
+										fill="currentColor"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"
+											fill="inherit"
+										/>
+									</svg>
+									<span class="price-label__text">0.25 ETH</span>
+								</div>
+								<p class="discover-nft__card-info-in-stock">1 of 321</p>
+							</div>
+							<div class="discover-nft__card-bid">
+								<time class="discover-nft__card-bid-time" datetime="03:50:02"
+									>3h 50m 2s left</time
+								>
+								<a class="discover-nft__card-bid-link" href="#">Place a bid</a>
+							</div>
+						</div>
+						<div class="discover-nft__card">
+							<img
+								class="discover-nft__card-image"
+								src="./src/assets/images/discover-nft/NFT-image-3.png"
+								alt="NFT image"
+								height="222"
+							/>
+							<div class="discover-nft__card-users-photos">
+								<img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-1.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-2.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-3.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-4.png"
+									alt=""
+								/>
+							</div>
+							<h3 class="discover-nft__card-title">NameCrypto</h3>
+							<div class="discover-nft__card-info">
+								<div class="price-label">
+									<svg
+										width="8"
+										height="15"
+										viewBox="0 0 13 22"
+										fill="currentColor"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"
+											fill="inherit"
+										/>
+									</svg>
+									<span class="price-label__text">0.25 ETH</span>
+								</div>
+								<p class="discover-nft__card-info-in-stock">1 of 321</p>
+							</div>
+							<div class="discover-nft__card-bid">
+								<time class="discover-nft__card-bid-time" datetime="03:50:02"
+									>3h 50m 2s left</time
+								>
+								<a class="discover-nft__card-bid-link" href="#">Place a bid</a>
+							</div>
+						</div>
+						<div class="discover-nft__card">
+							<img
+								class="discover-nft__card-image"
+								src="./src/assets/images/discover-nft/NFT-image-4.png"
+								alt="NFT image"
+								height="222"
+							/>
+							<div class="discover-nft__card-users-photos">
+								<img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-1.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-2.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-3.png"
+									alt=""
+								/><img
+									class="discover-nft__card-user-photo"
+									src="./src/assets/images/discover-nft/user-photo-4.png"
+									alt=""
+								/>
+							</div>
+							<h3 class="discover-nft__card-title">KingCrypto</h3>
+							<div class="discover-nft__card-info">
+								<div class="price-label">
+									<svg
+										width="8"
+										height="15"
+										viewBox="0 0 13 22"
+										fill="currentColor"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"
+											fill="inherit"
+										/>
+									</svg>
+									<span class="price-label__text">0.25 ETH</span>
+								</div>
+								<p class="discover-nft__card-info-in-stock">1 of 321</p>
+							</div>
+							<div class="discover-nft__card-bid">
+								<time class="discover-nft__card-bid-time" datetime="03:50:02"
+									>3h 50m 2s left</time
+								>
+								<a class="discover-nft__card-bid-link" href="#">Place a bid</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__content-box">
+					<section class="footer__about">
+						<h2 class="footer__about-title">NFters</h2>
+						<p class="footer__about-text">
+							The world’s first and largest digital marketplace for crypto
+							collectibles and non-fungible tokens (NFTs). Buy, sell, and
+							discover exclusive digital items.
+						</p>
+						<address class="footer__about-address">
+							<img
+								class="footer__about-social-image"
+								src="./src/assets/images/social/facebook.svg"
+								alt="facebook"
+							/>
+							<img
+								class="footer__about-social-image"
+								src="./src/assets/images/social/twitter.svg"
+								alt="twitter"
+							/>
+							<img
+								class="footer__about-social-image"
+								src="./src/assets/images/social/linkedin.svg"
+								alt="linkedin"
+							/>
+						</address>
+					</section>
+
+					<section class="footer__navigation">
+						<h3 class="footer__navigation-title">Market Place</h3>
+						<ul class="footer__navigation-list">
+							<li class="footer__navigation-list-item">
+								<a class="footer__navigation-link" href="#">All NFTs</a>
+							</li>
+							<li class="footer__navigation-list-item">
+								<a class="footer__navigation-link" href="#">New</a>
+							</li>
+							<li class="footer__navigation-list-item">
+								<a class="footer__navigation-link" href="#">Art</a>
+							</li>
+							<li class="footer__navigation-list-item">
+								<a class="footer__navigation-link" href="#">Sports</a>
+							</li>
+							<li class="footer__navigation-list-item">
+								<a class="footer__navigation-link" href="#">Utility</a>
+							</li>
+							<li class="footer__navigation-list-item">
+								<a class="footer__navigation-link" href="#">Music</a>
+							</li>
+							<li class="footer__navigation-list-item">
+								<a class="footer__navigation-link" href="#">Domain Name</a>
+							</li>
+						</ul>
+					</section>
+
+					<section class="footer__navigation">
+						<h3 class="footer__navigation-title">Market Place</h3>
+						<ul class="footer__navigation-list">
+							<li class="footer__navigation-list-item">
+								<a class="footer__navigation-link" href="#">Profile</a>
+							</li>
+							<li class="footer__navigation-list-item">
+								<a class="footer__navigation-link" href="#">Favorite</a>
+							</li>
+							<li class="footer__navigation-list-item">
+								<a class="footer__navigation-link" href="#">My collections</a>
+							</li>
+							<li class="footer__navigation-list-item">
+								<a class="footer__navigation-link" href="#">settings</a>
+							</li>
+						</ul>
+					</section>
+
+					<section class="footer__stay-in-loop">
+						<h3 class="footer__stay-in-loop-title">Stay in the loop</h3>
+						<p class="footer__stay-in-loop-text">
+							Join our mailing list to stay in the loop with our newest feature
+							releases, NFT drops, and tips and tricks for navigating NFTs.
+						</p>
+
+						<form class="footer__stay-in-loop-from" method="post">
+							<input
+								class="footer__stay-in-loop-from-inp"
+								type="email"
+								autocomplete="email"
+								placeholder="Enter your email address.."
+							/>
+							<button class="button" type="submit">Subscibe Now</button>
+						</form>
+					</section>
+				</div>
+			</div>
+			<span class="footer__copyright">Copyright &copy; 2022 Avi Yansah</span>
+		</footer>
+	</body>
+</html>

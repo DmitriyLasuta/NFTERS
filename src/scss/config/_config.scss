@@ -1,0 +1,70 @@
+@font-face {
+	font-family: "Integral CF";
+	src: url("../assets/fonts/IntegralCF/IntegralCFRegular.ttf")
+		format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "DM Sans";
+	src: url("../assets/fonts/DMSans/DMSans-Regular.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "DM Sans";
+	src: url("../assets/fonts/DMSans/DMSans-Bold.ttf");
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "DM Sans";
+	src: url("../assets/fonts/DMSans/DMSans-Medium.ttf");
+	font-style: normal;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "Averta Demo PE Cutted Demo Regular";
+	src: url("../assets/fonts/AvertaDemoPECutted/averta_demo_pe_cutted_demo_regular.eot");
+	src: url("../assets/fonts/AvertaDemoPECutted/averta_demo_pe_cutted_demo_regular.eot?#iefix")
+			format("embedded-opentype"),
+		url("../assets/fonts/AvertaDemoPECutted/averta_demo_pe_cutted_demo_regular.woff2")
+			format("woff2"),
+		url("../assets/fonts/AvertaDemoPECutted/averta_demo_pe_cutted_demo_regular.woff")
+			format("woff"),
+		url("../assets/fonts/AvertaDemoPECutted/averta_demo_pe_cutted_demo_regular.ttf")
+			format("truetype");
+}
+
+html {
+	font: normal 20px/160% "DM Sans", sans-serif;
+	color: $primary-text-color;
+
+	@media (max-width: 1024px) {
+		font-size: 15px;
+	}
+}
+
+h1 {
+	font: normal 2rem/120% "Integral CF", sans-serif;
+	letter-spacing: 0.05em;
+}
+
+h2 {
+	font: bold 1.4rem/1.7rem "Integral CF", sans-serif;
+	font-weight: 700;
+}
+
+h3 {
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 1.3rem;
+}
+
+body {
+	background-color: $primary-bg-color;
+}

@@ -1,0 +1,11 @@
+.price-label {
+  @include flexWrap(flex-start, center);
+  gap: 6px;
+  font-size: 16px;
+
+	&__text {
+    font-size: inherit;
+    font-weight: 700;
+    white-space: nowrap;
+	}
+}
