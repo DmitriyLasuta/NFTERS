@@ -1416,3 +1416,72 @@ body {
 .finished-collections__owner-wallet-growth--red {
   color: #ff002e;
 }
+
+.presentation-of-collections {
+  padding: 6.5rem 0;
+  background-color: rgba(217, 224, 236, 0.2);
+}
+.presentation-of-collections__title {
+  margin-bottom: 2.6rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .presentation-of-collections__title {
+    text-align: left;
+  }
+}
+.presentation-of-collections__content-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .presentation-of-collections__content-box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.presentation-of-collections__collection-images {
+  display: grid;
+  grid-template-columns: 70% auto;
+  grid-template-rows: repeat(3, auto);
+  gap: 8.25px 9.17px;
+  margin-bottom: 1.5rem;
+}
+.presentation-of-collections__collection-image:nth-child(1) {
+  grid-row: 1/span 3;
+}
+.presentation-of-collections .button {
+  margin-left: auto;
+  font-size: 11px;
+  line-height: 14px;
+}
+.presentation-of-collections__collection-owner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.presentation-of-collections__collection-owner-username {
+  font-weight: 500;
+  font-size: 14px;
+}
