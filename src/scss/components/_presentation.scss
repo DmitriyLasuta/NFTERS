@@ -1,0 +1,171 @@
+.presentation {
+	padding: 2.5rem 0 3rem 0;
+	&__content {
+		@include flexWrap(space-between, center);
+		flex-direction: column;
+		gap: 4rem;
+
+		@media (min-width: 768px) {
+			flex-direction: row;
+		}
+	}
+
+	&__description {
+		position: relative;
+		text-align: center;
+		@media (min-width: 768px) {
+			text-align: left;
+			max-width: 50%;
+
+			&::before {
+				@include pseudo(
+					$content: url("../assets/images/presentation/bg-dot.svg")
+				);
+				z-index: -1;
+				top: 50%;
+				left: -15%;
+			}
+		}
+		&-title {
+			margin-bottom: 1.1rem;
+		}
+		&-subtitle {
+			margin-bottom: 2.05rem;
+			color: $secondary-text-color;
+		}
+	}
+
+	&__description-characteristic-list {
+		margin-top: 1.5rem;
+		@include flexWrap(center, flex-start);
+		gap: 1.15rem;
+
+		@media (min-width: 768px) {
+			justify-content: flex-start;
+		}
+	}
+
+	&__characteristic-item {
+		text-align: left;
+	}
+
+	&__characteristic-value {
+		font-family: "Integral CF";
+		font-weight: 700;
+		font-size: 2rem;
+		letter-spacing: 0.05em;
+	}
+
+	&__characteristic-label {
+	}
+
+	&__promo {
+		position: relative;
+		@media (min-width: 768px) {
+			transform: translateX(-15%);
+		}
+
+		@media (min-width: 1024px) {
+			&::before {
+				@include pseudo(
+					$content: url("../assets/images/presentation/promo-medal.png")
+				);
+				z-index: 1;
+				top: 40%;
+				left: -15%;
+			}
+		}
+
+		&-details {
+			position: absolute;
+			z-index: 1;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			padding: 1.3rem;
+			color: #ffffff;
+			@include flexWrap($crossAxis: stretch);
+			flex-direction: column;
+
+			&-title {
+				font-size: 1.4rem;
+				letter-spacing: -0.05em;
+				margin-bottom: 10px;
+			}
+			&-seller {
+				@include flexWrap($crossAxis: center);
+				gap: 14px;
+
+				&-name {
+					font-weight: 700;
+				}
+
+				.owner-photo {
+					max-width: 10%;
+				}
+			}
+		}
+
+		&-bid {
+			background: rgba(255, 255, 255, 0.2);
+			backdrop-filter: blur(25px);
+			border-radius: 12px;
+			padding: 14px 24px;
+			display: grid;
+			grid-template-columns: 60% 40%;
+			grid-template-rows: repeat(2, auto);
+			margin-top: auto;
+
+			&-label {
+				grid-column: 1;
+			}
+
+			.price-label {
+				grid-column: 1;
+				grid-row: 2;
+				font-size: 0.85rem;
+				svg {
+					scale: 0.8;
+				}
+			}
+
+			&-duration-label,
+			&-label {
+				font-weight: 500;
+				font-size: 12px;
+			}
+
+			&-duration-time {
+				font-size: 0.85rem;
+			}
+		}
+	}
+
+	&__promo-img {
+		border-radius: $images-border-radius;
+	}
+
+	&__promo-img:nth-child(3),
+	&__promo-img:nth-child(4) {
+		display: none;
+		@media (min-width: 768px) {
+			display: block;
+			position: absolute;
+		}
+	}
+
+	&__promo-img:nth-child(3) {
+		left: 15%;
+		top: 5%;
+		z-index: -1;
+		max-width: 90%;
+	}
+
+	&__promo-img:nth-child(4) {
+		left: 30%;
+		z-index: -2;
+		top: 10%;
+		max-width: 80%;
+	}
+}
