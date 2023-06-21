@@ -40,12 +40,20 @@
 			format("truetype");
 }
 
+* {
+	box-sizing: border-box;
+}
+
 html {
-	font: normal 20px/160% "DM Sans", sans-serif;
+	font: normal 14px/160% "DM Sans", sans-serif;
 	color: $primary-text-color;
 
-	@media (max-width: 1024px) {
-		font-size: 15px;
+	@media (min-width: 768px) {
+		font-size: 16px;
+	}
+
+	@media (min-width: 1024px) {
+		font-size: 20px;
 	}
 }
 
