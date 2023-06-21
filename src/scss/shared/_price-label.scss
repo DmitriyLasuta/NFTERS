@@ -1,11 +1,20 @@
 .price-label {
-  @include flexWrap(flex-start, center);
-  gap: 6px;
-  font-size: 0.8rem;
+	@include flexWrap(flex-start, center);
+	gap: 6px;
+	font-size: 0.8rem;
 
 	&__text {
-    font-size: inherit;
-    font-weight: 700;
-    white-space: nowrap;
+		font-size: inherit;
+		font-weight: 700;
+		white-space: nowrap;
+	}
+	svg {
+		scale: 0.8;
+	}
+
+	@media (min-width: 1024px) {
+		svg {
+			scale: 1;
+		}
 	}
 }
