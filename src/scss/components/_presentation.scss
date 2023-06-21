@@ -128,6 +128,12 @@
 				svg {
 					scale: 0.8;
 				}
+
+				@media (min-width: 1024px) {
+					svg {
+						scale: 1;
+					}
+				}
 			}
 
 			&-duration-label,
