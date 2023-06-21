@@ -101,20 +101,19 @@
 		gap: 2rem;
 	}
 
-	&__nav-item {
-		transition: scale 0.4s;
-
-		&:is(:hover, :focus) {
-			scale: 1.1;
-		}
-	}
-
 	&__nav-link {
 		font-weight: 500;
 		font-size: 16px;
 		line-height: 21px;
 		letter-spacing: 0.04em;
 		color: $primary-text-color;
+		transition: scale 0.4s;
+		display: inline-block;
+
+		&:is(:hover, :focus) {
+			scale: 1.1;
+			color: $additional-color;
+		}
 	}
 
 	&__search-form {
