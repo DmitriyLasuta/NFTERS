@@ -703,6 +703,7 @@ body {
   background-color: #fff;
   position: fixed;
   width: 100vw;
+  max-height: 90px;
   border-bottom: 1px solid #efefef;
   padding: 1rem 0;
   z-index: 10;
@@ -871,6 +872,7 @@ body {
   border-radius: 100px;
   padding: 0.5rem 34px 0.5rem 1rem;
   width: 100%;
+  font-size: 0.8rem;
 }
 .header__search-inp::-webkit-input-placeholder {
   font-size: 0.8rem;
@@ -931,4 +933,8 @@ body {
             align-items: center;
     gap: 10px;
   }
+}
+
+.main {
+  padding-top: calc(90px + 2.5rem);
 }
