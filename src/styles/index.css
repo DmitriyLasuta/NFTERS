@@ -1806,3 +1806,189 @@ body {
   -webkit-transform: translateX(-35px);
           transform: translateX(-35px);
 }
+
+.footer {
+  padding-top: 4.15rem;
+  padding-bottom: 1.2rem;
+}
+.footer__content-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  border-bottom: 1px solid #f4f4f4;
+  padding-bottom: 3.45rem;
+}
+@media (min-width: 768px) {
+  .footer__content-box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 50px;
+    text-align: left;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media (min-width: 1024px) {
+  .footer__content-box {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+.footer__about {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  margin-bottom: 1.35rem;
+}
+.footer__about-title {
+  margin-bottom: 1.35rem;
+}
+.footer__about-text {
+  color: #696969;
+  font-size: 14px;
+  font-family: "Averta Demo PE Cutted Demo";
+  margin-bottom: 1.6rem;
+}
+.footer__about-address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  .footer__about-address {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+.footer__social-link {
+  -webkit-transition: scale 0.2s;
+  transition: scale 0.2s;
+}
+.footer__social-link:is(:hover, :focus) {
+  scale: 1.2;
+}
+.footer__navigation {
+  text-align: left;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .footer__navigation {
+    width: 25%;
+  }
+}
+.footer__navigation-title {
+  margin-bottom: 1.2rem;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__navigation-title:active {
+  background: rgba(217, 224, 236, 0.2);
+}
+.footer__navigation-title::after {
+  content: url("../assets/icons/down-arrow.svg");
+}
+@media (min-width: 768px) {
+  .footer__navigation-title::after {
+    content: "";
+  }
+}
+.footer__navigation-list {
+  display: none;
+}
+@media (min-width: 768px) {
+  .footer__navigation-list {
+    display: block;
+  }
+}
+.footer__navigation-link {
+  font-size: 14px;
+}
+.footer__navigation-link:is(:hover, :focus) {
+  text-decoration: underline;
+}
+.footer__stay-in-loop {
+  margin-top: 1.35rem;
+}
+@media (min-width: 768px) {
+  .footer__stay-in-loop {
+    margin-top: 0;
+  }
+}
+.footer__stay-in-loop-text {
+  color: #696969;
+  font-size: 14px;
+  margin: 1.2rem 0;
+}
+.footer__stay-in-loop-from {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 45.595px;
+  border: 2px solid #f1f1f1;
+  background: #fff;
+  padding: 7px;
+  gap: 10px;
+}
+.footer__stay-in-loop-from-inp {
+  width: 100%;
+  border: 2px solid transparent;
+  margin: 5px 8px;
+  font-size: 12px;
+}
+.footer__stay-in-loop-from-inp::-webkit-input-placeholder {
+  color: #959595;
+  font-size: 12px;
+}
+.footer__stay-in-loop-from-inp::-moz-placeholder {
+  color: #959595;
+  font-size: 12px;
+}
+.footer__stay-in-loop-from-inp:-ms-input-placeholder {
+  color: #959595;
+  font-size: 12px;
+}
+.footer__stay-in-loop-from-inp::-ms-input-placeholder {
+  color: #959595;
+  font-size: 12px;
+}
+.footer__stay-in-loop-from-inp::placeholder {
+  color: #959595;
+  font-size: 12px;
+}
+.footer__stay-in-loop-from .button {
+  font-size: 12px;
+}
+.footer__copyright {
+  margin-top: 15px;
+  text-align: center;
+  color: #a4a4a4;
+  font-size: 14px;
+  font-family: "Averta Demo PE Cutted Demo";
+}
