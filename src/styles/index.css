@@ -837,19 +837,19 @@ body {
           align-items: center;
   gap: 2rem;
 }
-.header__nav-item {
-  -webkit-transition: scale 0.4s;
-  transition: scale 0.4s;
-}
-.header__nav-item:is(:hover, :focus) {
-  scale: 1.1;
-}
 .header__nav-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
   letter-spacing: 0.04em;
   color: #000;
+  -webkit-transition: scale 0.4s;
+  transition: scale 0.4s;
+  display: inline-block;
+}
+.header__nav-link:is(:hover, :focus) {
+  scale: 1.1;
+  color: #3d00b7;
 }
 .header__search-form {
   position: relative;
@@ -1484,4 +1484,135 @@ body {
 .presentation-of-collections__collection-owner-username {
   font-weight: 500;
   font-size: 14px;
+}
+
+.sing-up-nft {
+  padding: 6rem 0;
+}
+.sing-up-nft__content-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+}
+.sing-up-nft__presentation-images {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sing-up-nft__presentation-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2.5rem 2rem;
+  }
+}
+.sing-up-nft__presentation-image {
+  border-radius: 12px;
+}
+.sing-up-nft__presentation-image-box:nth-of-type(1) {
+  grid-column: 1;
+  grid-row: 1;
+  position: relative;
+}
+.sing-up-nft__presentation-image-box:nth-of-type(1)::after {
+  content: url("../assets/images/owner-photo.png");
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 70%;
+  left: 70%;
+  scale: 0.7;
+}
+@media (min-width: 1024px) {
+  .sing-up-nft__presentation-image-box:nth-of-type(1)::after {
+    scale: 0.8;
+    top: 80%;
+    left: 80%;
+  }
+}
+@media (min-width: 1440px) {
+  .sing-up-nft__presentation-image-box:nth-of-type(1)::after {
+    scale: 1;
+  }
+}
+.sing-up-nft__presentation-image-box:nth-of-type(2) {
+  grid-column: 2;
+  grid-row: 1/3;
+  align-self: center;
+  max-width: 90%;
+  position: relative;
+}
+.sing-up-nft__presentation-image-box:nth-of-type(2)::after {
+  content: url("../assets/images/owner-photo-2.png");
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 65%;
+  left: 65%;
+  scale: 0.7;
+}
+@media (min-width: 1024px) {
+  .sing-up-nft__presentation-image-box:nth-of-type(2)::after {
+    scale: 0.8;
+    top: 75%;
+    left: 75%;
+  }
+}
+@media (min-width: 1440px) {
+  .sing-up-nft__presentation-image-box:nth-of-type(2)::after {
+    scale: 0.9;
+  }
+}
+.sing-up-nft__presentation-image-box:nth-of-type(3) {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: end;
+  max-width: 85%;
+  height: auto;
+  position: relative;
+}
+.sing-up-nft__presentation-image-box:nth-of-type(3)::after {
+  content: url("../assets/images/owner-photo-2.png");
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 60%;
+  left: 65%;
+  scale: 0.7;
+}
+@media (min-width: 1024px) {
+  .sing-up-nft__presentation-image-box:nth-of-type(3)::after {
+    scale: 0.8;
+    top: 65%;
+    left: 70%;
+  }
+}
+@media (min-width: 1440px) {
+  .sing-up-nft__presentation-image-box:nth-of-type(3)::after {
+    scale: 1;
+  }
+}
+.sing-up-nft__content {
+  text-align: center;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .sing-up-nft__content {
+    max-width: 50%;
+    text-align: left;
+  }
+}
+.sing-up-nft__content-title {
+  margin-bottom: 2rem;
+}
+.sing-up-nft__content-text {
+  margin-bottom: 1.6rem;
+  font-size: 0.9rem;
+  color: #696969;
 }
