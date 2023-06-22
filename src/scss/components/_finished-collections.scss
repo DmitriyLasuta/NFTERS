@@ -159,6 +159,9 @@
 		letter-spacing: -0.025em;
 		color: #14c8b0;
 		margin-left: auto;
+		@media (max-width: 1024px) {
+			padding-right: 20px;
+		}
 
 		&--red {
 			color: #ff002e;

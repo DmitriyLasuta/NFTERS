@@ -1,6 +1,8 @@
 .our-advantages {
 	background-color: $secondary-bg-color;
+	backdrop-filter: blur(25px);
 	padding: 5rem 0;
+	
 	&__content-box {
 		@include flexWrap(space-between, flex-start);
 		flex-direction: column;

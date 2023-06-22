@@ -1,0 +1,162 @@
+.discover-nft {
+	text-align: center;
+	background-color: $secondary-bg-color;
+	backdrop-filter: blur(25px);
+	padding-top: 3.2rem;
+	padding-bottom: 2.35rem;
+
+	&__title {
+		margin-bottom: 1.9rem;
+	}
+
+	&__categories {
+		margin-bottom: 2rem;
+	}
+
+	&__categories-list {
+		@include flexWrap($crossAxis: center);
+		gap: 12px;
+		align-items: center;
+		justify-items: center;
+		flex-wrap: wrap;
+	}
+
+	&__categories-list-item:last-child {
+		@media (min-width: 768px) {
+			margin-left: auto;
+		}
+	}
+
+	&__categories-list-item:last-child &__categories-btn {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		gap: 0.5rem;
+		color: #371c87;
+
+		&:hover {
+			background: #3d00b7ab;
+			color: #fff;
+		}
+
+		&:active {
+			background: #280077;
+		}
+
+		&-image {
+			max-width: 20%;
+		}
+	}
+
+	&__categories-btn {
+		text-transform: capitalize;
+		color: $primary-text-color;
+		font-size: 14px;
+		font-weight: 500;
+		padding: 0.5rem 1rem;
+		border-radius: 100px;
+		background: rgba(220, 220, 220, 0.2);
+		white-space: nowrap;
+
+		&:is(:hover, :focus) {
+			background: #3d00b7ab;
+			color: #fff;
+		}
+
+		&:active {
+			background: #280077;
+		}
+
+		&--active {
+			background: #3d00b7;
+			color: #fff;
+		}
+	}
+
+	&__content-box {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 270px);
+		gap: 2rem 2rem;
+		justify-content: center;
+		align-content: center;
+		margin-bottom: 3.75rem;
+	}
+
+	&__card {
+		border-radius: 13.165px;
+		border: 1.097px solid rgba(242, 242, 242, 0.5);
+		background: $primary-bg-color;
+		display: flex;
+		flex-direction: column;
+		padding: 10px;
+		position: relative;
+
+		&-image {
+			align-self: center;
+			margin-bottom: 20px;
+		}
+
+		&-title {
+			margin-bottom: 8.5px;
+		}
+
+		&-info {
+			@include flexWrap(space-between, center);
+			margin-bottom: 20px;
+
+			.price-label {
+				color: #00ac4f;
+			}
+
+			&-in-stock {
+				color: $secondary-text-color;
+				font-size: 12px;
+				font-weight: 500;
+			}
+		}
+
+		&-bid {
+			border-top: 1px solid #f4f4f4;
+			padding-top: 15px;
+			@include flexWrap(space-between, center);
+
+			&-time {
+				color: #5539a8;
+				font-size: 12px;
+				font-weight: 700;
+				padding: 4px 10px;
+
+				border-radius: 109.706px;
+				background: #f5f5f5;
+			}
+
+			&-link {
+				color: #4f33a3;
+				font-size: 15px;
+				font-weight: 500;
+
+				&:is(:hover, :focus) {
+					text-decoration: underline;
+				}
+
+				&:active {
+					color: #00ac4f;
+				}
+			}
+		}
+	}
+	&__card-users-photos {
+		position: absolute;
+		top: 55%;
+	}
+
+	&__card-user-photo:nth-child(2) {
+		transform: translateX(-15px);
+	}
+	&__card-user-photo:nth-child(3) {
+		transform: translateX(-25px);
+	}
+	&__card-user-photo:nth-child(4) {
+		transform: translateX(-35px);
+	}
+}

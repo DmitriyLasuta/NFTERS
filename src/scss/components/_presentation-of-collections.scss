@@ -1,6 +1,7 @@
 .presentation-of-collections {
 	padding: 6.5rem 0;
 	background-color: $secondary-bg-color;
+	backdrop-filter: blur(25px);
 
 	&__title {
 		margin-bottom: 2.6rem;
