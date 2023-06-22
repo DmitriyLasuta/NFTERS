@@ -76,7 +76,7 @@
 
 		&-list {
 			display: none;
-
+			text-transform: capitalize;
 			@media (min-width: 768px) {
 				display: block;
 			}
