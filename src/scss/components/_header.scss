@@ -1,0 +1,172 @@
+.header {
+	background-color: #fff;
+	position: fixed;
+	width: 100vw;
+  max-height: 90px;
+	border-bottom: 1px solid #efefef;
+	padding: 1rem 0;
+	z-index: 10;
+	&__content {
+		@include flexWrap($crossAxis: center);
+		gap: 5px;
+		@media (min-width: 768px) {
+			justify-content: space-between;
+			gap: 15px;
+		}
+	}
+
+	&__logo {
+		font-family: "Integral CF";
+		user-select: none;
+		font-weight: 700;
+		font-size: 1.2rem;
+		color: $additional-color;
+		margin-right: auto;
+		transition: scale 0.4s;
+
+		&:is(:hover, :focus) {
+			scale: 1.1;
+		}
+
+		@media (min-width: 768px) {
+			margin: 0;
+			padding-right: 1.3rem;
+			border-right: 1px solid #efefef;
+		}
+	}
+
+	&__menu-burger {
+		width: 40px;
+		height: 40px;
+		position: relative;
+		@include flexWrap(center, center);
+
+		&-line,
+		&::after,
+		&::before {
+			@include pseudo();
+			width: 24px;
+			height: 4px;
+			border-radius: 10px;
+			left: 25%;
+			background-color: $additional-color;
+			transition: transform 0.5s, opacity 0.3s;
+		}
+
+		&::after {
+			top: 25%;
+		}
+
+		&::before {
+			top: 65%;
+		}
+
+		&:focus {
+			outline: 1px solid $secondary-bg-color;
+			border-radius: 5px;
+			outline-offset: -2px;
+		}
+
+		&--active {
+			.header__menu-burger-line {
+				opacity: 0;
+			}
+
+			&::before {
+				transform: rotate(45deg);
+				top: 45%;
+			}
+
+			&::after {
+				transform: rotate(-45deg);
+				top: 45%;
+			}
+		}
+
+		@media (min-width: 1024px) {
+			display: none;
+		}
+	}
+
+	&__nav {
+		display: none;
+		@media (min-width: 1024px) {
+			display: block;
+			padding: 0 1rem;
+		}
+	}
+
+	&__nav-list {
+		@include flexWrap(space-between, center);
+		gap: 2rem;
+	}
+
+	&__nav-link {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 21px;
+		letter-spacing: 0.04em;
+		color: $primary-text-color;
+		transition: scale 0.4s;
+		display: inline-block;
+
+		&:is(:hover, :focus) {
+			scale: 1.1;
+			color: $additional-color;
+		}
+	}
+
+	&__search-form {
+		position: relative;
+		@include flexWrap($crossAxis: center);
+		width: 40%;
+		@media (min-width: 768px) {
+			padding-left: 1.3rem;
+		}
+		@media (min-width: 1024px) {
+			padding-left: 0;
+		}
+	}
+
+	&__search-inp {
+		background: #ffffff;
+		border: 2px solid #efefef;
+		border-radius: 100px;
+		padding: 0.5rem 34px 0.5rem 1rem;
+		width: 100%;
+    font-size: 0.8rem;
+		&::placeholder {
+			font-size: 0.8rem;
+			letter-spacing: 0.04em;
+			color: #c0c0c0;
+		}
+
+		&:is(:active, :focus) {
+			border: 2px solid $primary-text-color;
+		}
+	}
+
+	&__search-btn {
+		position: absolute;
+		right: 5%;
+		scale: 0.8;
+		color: #757575;
+
+		&:is(:active, :focus) {
+			color: $primary-text-color;
+		}
+
+		@media (min-width: 768px) {
+			scale: 1;
+		}
+	}
+
+	&__buttons {
+		display: none;
+		font-size: 14px;
+		@media (min-width: 768px) {
+			@include flexWrap(space-between, center);
+			gap: 10px;
+		}
+	}
+}

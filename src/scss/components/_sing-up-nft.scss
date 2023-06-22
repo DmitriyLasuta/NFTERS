@@ -1,0 +1,118 @@
+.sing-up-nft {
+	padding: 6rem 0;
+
+	&__content-box {
+		@include flexWrap(space-between, center);
+		gap: 3rem;
+	}
+
+	&__presentation-images {
+		display: none;
+		@media (min-width: 768px) {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+			gap: 2.5rem 2rem;
+		}
+	}
+
+	&__presentation-image {
+		border-radius: $images-border-radius;
+	}
+
+	&__presentation-image-box:nth-of-type(1) {
+		grid-column: 1;
+		grid-row: 1;
+		position: relative;
+
+		&::after {
+			@include pseudo($content: url("../assets/images/owner-photo.png"));
+			z-index: 1;
+			top: 70%;
+			left: 70%;
+      scale: 0.7;
+
+      @media (min-width: 1024px) {
+        scale: 0.8;
+        top: 80%;
+        left: 80%;
+      }
+
+      @media (min-width: 1440px) {
+        scale: 1;
+      }
+		}
+	}
+
+	&__presentation-image-box:nth-of-type(2) {
+		grid-column: 2;
+		grid-row: 1 / 3;
+		align-self: center;
+		max-width: 90%;
+		position: relative;
+
+		&::after {
+			@include pseudo($content: url("../assets/images/owner-photo-2.png"));
+			z-index: 1;
+			top: 65%;
+			left: 65%;
+      scale: 0.7;
+
+      @media (min-width: 1024px) {
+        scale: 0.8;
+        top: 75%;
+        left: 75%;
+      }
+
+      @media (min-width: 1440px) {
+        scale: 0.9;
+      }
+		}
+	}
+
+	&__presentation-image-box:nth-of-type(3) {
+		grid-column: 1;
+		grid-row: 2;
+		justify-self: end;
+		max-width: 85%;
+		height: auto;
+		position: relative;
+
+		&::after {
+			@include pseudo($content: url("../assets/images/owner-photo-2.png"));
+			z-index: 1;
+			top: 60%;
+			left: 65%;
+      scale: 0.7;
+
+      @media (min-width: 1024px) {
+        scale: 0.8;
+        top: 65%;
+        left: 70%;
+      }
+
+      @media (min-width: 1440px) {
+        scale: 1;
+      }
+		}
+	}
+
+	&__content {
+		text-align: center;
+		position: relative;
+
+		@media (min-width: 768px) {
+			max-width: 50%;
+			text-align: left;
+		}
+		&-title {
+			margin-bottom: 2rem;
+		}
+
+		&-text {
+			margin-bottom: 1.6rem;
+			font-size: 0.9rem;
+			color: $secondary-text-color;
+		}
+	}
+}

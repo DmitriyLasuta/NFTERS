@@ -19,7 +19,9 @@
 
 		<link rel="stylesheet" href="./src/styles/index.min.css" />
 
-		<title>NFT Market Place</title>
+		<script src="./src/scripts/burger.js"></script>
+
+		<title>NFTERS</title>
 	</head>
 	<body>
 		<header class="header">
@@ -27,15 +29,7 @@
 				<div class="header__content">
 					<a class="header__logo" href="#">NFters</a>
 
-					<button
-						class="header__menu-burger"
-						aria-label="navigation menu"
-						type="button"
-					>
-						<span class="header__menu-burger-line" role="presentation"></span>
-					</button>
-
-					<nav class="header__nav" aria-label="site navigation">
+					<nav class="header__nav">
 						<ul class="header__nav-list">
 							<li class="header__nav-item">
 								<a href="#" class="header__nav-link">Marketplace</a>
@@ -61,7 +55,7 @@
 								width="24"
 								height="24"
 								viewBox="0 0 24 24"
-								fill="#757575"
+								fill="currentColor"
 								xmlns="http://www.w3.org/2000/svg"
 							>
 								<path
@@ -82,6 +76,14 @@
 							Connect Wallet
 						</button>
 					</div>
+
+					<button
+						class="header__menu-burger"
+						aria-label="navigation menu"
+						type="button"
+					>
+						<span class="header__menu-burger-line" role="presentation"></span>
+					</button>
 				</div>
 			</div>
 		</header>
@@ -150,9 +152,9 @@
 										</svg>
 										<span class="price-label__text">0.25 ETH</span>
 									</div>
-									<p class="presentation__promo-duration-label">Ends in</p>
+									<p class="presentation__promo-bid-duration-label">Ends in</p>
 									<time
-										class="presentation__promo-duration-time"
+										class="presentation__promo-bid-duration-time"
 										datetime="12:43:42"
 										>12h 43m 42s</time
 									>
@@ -227,12 +229,16 @@
 									class="finished-collections__image"
 									src="./src/assets/images/finished-collections/image-from-collection-1.png"
 									alt="NFT from user collection"
+									width="400"
+									height="424"
 								/>
 								<div class="finished-collections__more-complete-info">
 									<img
-										class="finished-collections__owner-photo"
+										class="owner-photo"
 										src="./src/assets/images/owner-photo.png"
 										alt="Owner photo"
+										width="48"
+										height="48"
 									/>
 									<div class="finished-collections__more-complete-user-data">
 										<p class="finished-collections__owner-username">
@@ -244,9 +250,9 @@
 									</div>
 
 									<div class="finished-collections__more-complete-info-bid">
-										<div class="finished-collections__more-complete-bid-title">
+										<p class="finished-collections__more-complete-bid-title">
 											Highest Bid
-										</div>
+										</p>
 										<div class="price-label">
 											<svg
 												width="13"
@@ -265,124 +271,126 @@
 									</div>
 								</div>
 							</div>
-							<div class="finished-collections__user-collection">
-								<img
-									class="finished-collections__image"
-									src="./src/assets/images/finished-collections/image-from-collection-2.png"
-									alt="NFT from user collection"
-								/>
-								<div class="finished-collections__user-collection-info">
-									<p class="finished-collections__owner-username">
-										The Futr Abstr
-									</p>
-									<div class="finished-collections__user-collection-details">
-										<img
-											class="finished-collections__owner-photo"
-											src="./src/assets/images/owner-photo.png"
-											alt="Owner photo"
-											width="34"
-											height="34"
-										/>
-										<div class="price-label">
-											<svg
-												width="13"
-												height="22"
-												viewBox="0 0 13 22"
-												fill="currentColor"
-												xmlns="http://www.w3.org/2000/svg"
-											>
-												<path
-													d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"
-													fill="inherit"
-												/>
-											</svg>
-											<span class="price-label__text">0.25 ETH</span>
+							<div class="finished-collections__other-collections">
+								<div class="finished-collections__user-collection">
+									<img
+										class="finished-collections__image"
+										src="./src/assets/images/finished-collections/image-from-collection-2.png"
+										alt="NFT from user collection"
+									/>
+									<div class="finished-collections__user-collection-about">
+										<p class="finished-collections__owner-username">
+											The Futr Abstr
+										</p>
+										<div class="finished-collections__user-collection-details">
+											<img
+												class="finished-collections__owner-photo"
+												src="./src/assets/images/owner-photo.png"
+												alt="Owner photo"
+												width="34"
+												height="34"
+											/>
+											<div class="price-label">
+												<svg
+													width="13"
+													height="22"
+													viewBox="0 0 13 22"
+													fill="currentColor"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"
+														fill="inherit"
+													/>
+												</svg>
+												<span class="price-label__text">0.25 ETH</span>
+											</div>
+											<p class="finished-collections__items-in-stock">1 of 8</p>
 										</div>
-										<p class="finished-collections__items-in-stock">1 of 8</p>
+										<button class="button button--transparent" type="button">
+											Place a bid
+										</button>
 									</div>
-									<button class="button button--transparent" type="button">
-										Place a bid
-									</button>
 								</div>
-							</div>
-							<div class="finished-collections__user-collection">
-								<img
-									class="finished-collections__image"
-									src="./src/assets/images/finished-collections/image-from-collection-3.png"
-									alt="NFT from user collection"
-								/>
-								<div class="finished-collections__user-collection-info">
-									<p class="finished-collections__owner-username">
-										The Futr Abstr
-									</p>
-									<div class="finished-collections__user-collection-details">
-										<img
-											class="finished-collections__owner-photo"
-											src="./src/assets/images/owner-photo.png"
-											alt="Owner photo"
-											width="34"
-											height="34"
-										/>
-										<div class="price-label">
-											<svg
-												width="13"
-												height="22"
-												viewBox="0 0 13 22"
-												fill="currentColor"
-												xmlns="http://www.w3.org/2000/svg"
-											>
-												<path
-													d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"
-													fill="inherit"
-												/>
-											</svg>
-											<span class="price-label__text">0.25 ETH</span>
+								<div class="finished-collections__user-collection">
+									<img
+										class="finished-collections__image"
+										src="./src/assets/images/finished-collections/image-from-collection-3.png"
+										alt="NFT from user collection"
+									/>
+									<div class="finished-collections__user-collection-about">
+										<p class="finished-collections__owner-username">
+											The Futr Abstr
+										</p>
+										<div class="finished-collections__user-collection-details">
+											<img
+												class="finished-collections__owner-photo"
+												src="./src/assets/images/owner-photo.png"
+												alt="Owner photo"
+												width="34"
+												height="34"
+											/>
+											<div class="price-label">
+												<svg
+													width="13"
+													height="22"
+													viewBox="0 0 13 22"
+													fill="currentColor"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"
+														fill="inherit"
+													/>
+												</svg>
+												<span class="price-label__text">0.25 ETH</span>
+											</div>
+											<p class="finished-collections__items-in-stock">1 of 8</p>
 										</div>
-										<p class="finished-collections__items-in-stock">1 of 8</p>
+										<button class="button button--transparent" type="button">
+											Place a bid
+										</button>
 									</div>
-									<button class="button button--transparent" type="button">
-										Place a bid
-									</button>
 								</div>
-							</div>
-							<div class="finished-collections__user-collection">
-								<img
-									class="finished-collections__image"
-									src="./src/assets/images/finished-collections/image-from-collection-4.png"
-									alt="NFT from user collection"
-								/>
-								<div class="finished-collections__user-collection-info">
-									<p class="finished-collections__owner-username">
-										The Futr Abstr
-									</p>
-									<div class="finished-collections__user-collection-details">
-										<img
-											class="finished-collections__owner-photo"
-											src="./src/assets/images/owner-photo.png"
-											alt="Owner photo"
-											width="34"
-											height="34"
-										/>
-										<div class="price-label">
-											<svg
-												width="13"
-												height="22"
-												viewBox="0 0 13 22"
-												fill="currentColor"
-												xmlns="http://www.w3.org/2000/svg"
-											>
-												<path
-													d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"
-													fill="inherit"
-												/>
-											</svg>
-											<span class="price-label__text">0.25 ETH</span>
+								<div class="finished-collections__user-collection">
+									<img
+										class="finished-collections__image"
+										src="./src/assets/images/finished-collections/image-from-collection-4.png"
+										alt="NFT from user collection"
+									/>
+									<div class="finished-collections__user-collection-about">
+										<p class="finished-collections__owner-username">
+											The Futr Abstr
+										</p>
+										<div class="finished-collections__user-collection-details">
+											<img
+												class="finished-collections__owner-photo"
+												src="./src/assets/images/owner-photo.png"
+												alt="Owner photo"
+												width="34"
+												height="34"
+											/>
+											<div class="price-label">
+												<svg
+													width="13"
+													height="22"
+													viewBox="0 0 13 22"
+													fill="currentColor"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"
+														fill="inherit"
+													/>
+												</svg>
+												<span class="price-label__text">0.25 ETH</span>
+											</div>
+											<p class="finished-collections__items-in-stock">1 of 8</p>
 										</div>
-										<p class="finished-collections__items-in-stock">1 of 8</p>
+										<button class="button button--transparent" type="button">
+											Place a bid
+										</button>
 									</div>
-									<button class="button button--transparent" type="button">
-										Place a bid
-									</button>
 								</div>
 							</div>
 						</div>
@@ -737,28 +745,43 @@
 				<div class="container">
 					<div class="sing-up-nft__content-box">
 						<div class="sing-up-nft__presentation-images">
-							<img
-								class="sing-up-nft__presentation-image"
-								src="./src/assets/images/presentation/presentation-image-1.jpg"
-								alt=""
-								width="300"
-								height="300"
-							/>
-							<img
-								class="sing-up-nft__presentation-image"
-								src="./src/assets/images/presentation/presentation-image-2.jpg"
-								alt=""
-								width="241"
-								height="265"
-							/>
+							<div
+								class="sing-up-nft__presentation-image-box"
+								role="presentation"
+							>
+								<img
+									class="sing-up-nft__presentation-image"
+									src="./src/assets/images/presentation/presentation-image-1.jpg"
+									alt=""
+									width="300"
+									height="300"
+								/>
+							</div>
+							<div
+								class="sing-up-nft__presentation-image-box"
+								role="presentation"
+							>
+								<img
+									class="sing-up-nft__presentation-image"
+									src="./src/assets/images/presentation/presentation-image-2.jpg"
+									alt=""
+									width="300"
+									height="300"
+								/>
+							</div>
 
-							<img
-								class="sing-up-nft__presentation-image"
-								src="./src/assets/images/presentation/presentation-image-3.jpg"
-								alt=""
-								width="195"
-								height="214"
-							/>
+							<div
+								class="sing-up-nft__presentation-image-box"
+								role="presentation"
+							>
+								<img
+									class="sing-up-nft__presentation-image"
+									src="./src/assets/images/presentation/presentation-image-3.jpg"
+									alt=""
+									width="300"
+									height="300"
+								/>
+							</div>
 						</div>
 
 						<div class="sing-up-nft__content">
@@ -784,25 +807,47 @@
 					<nav class="discover-nft__categories" aria-label="categories">
 						<ul class="discover-nft__categories-list">
 							<li class="discover-nft__categories-list-item">
-								<a href="discover-nft__categories-link">All Categories</a>
+								<button
+									class="discover-nft__categories-btn discover-nft__categories-btn--active"
+									type="button"
+								>
+									All categories
+								</button>
 							</li>
 							<li class="discover-nft__categories-list-item">
-								<a href="discover-nft__categories-link">art </a>
+								<button class="discover-nft__categories-btn" type="button">
+									art
+								</button>
 							</li>
 							<li class="discover-nft__categories-list-item">
-								<a href="discover-nft__categories-link">Celebrities</a>
+								<button class="discover-nft__categories-btn" type="button">
+									Celebrities
+								</button>
 							</li>
 							<li class="discover-nft__categories-list-item">
-								<a href="discover-nft__categories-link">sport </a>
+								<button class="discover-nft__categories-btn" type="button">
+									sport
+								</button>
 							</li>
 							<li class="discover-nft__categories-list-item">
-								<a href="discover-nft__categories-link">music</a>
+								<button class="discover-nft__categories-btn" type="button">
+									music
+								</button>
 							</li>
 							<li class="discover-nft__categories-list-item">
-								<a href="discover-nft__categories-link">Crypto</a>
+								<button class="discover-nft__categories-btn" type="button">
+									Crypto
+								</button>
 							</li>
 							<li class="discover-nft__categories-list-item">
-								<a href="discover-nft__categories-link">All Filters</a>
+								<button class="discover-nft__categories-btn" type="button">
+									<img
+										class="discover-nft__categories-btn-image"
+										src="./src/assets/images/discover-nft/filter-results-button.svg"
+										alt=""
+									/>
+									All Filters
+								</button>
 							</li>
 						</ul>
 					</nav>
@@ -1643,6 +1688,9 @@
 							</div>
 						</div>
 					</div>
+					<button class="button button--transparent" type="button">
+						More NFTs
+					</button>
 				</div>
 			</section>
 		</main>
@@ -1658,25 +1706,31 @@
 							discover exclusive digital items.
 						</p>
 						<address class="footer__about-address">
-							<img
-								class="footer__about-social-image"
-								src="./src/assets/images/social/facebook.svg"
-								alt="facebook"
-							/>
-							<img
-								class="footer__about-social-image"
-								src="./src/assets/images/social/twitter.svg"
-								alt="twitter"
-							/>
-							<img
-								class="footer__about-social-image"
-								src="./src/assets/images/social/linkedin.svg"
-								alt="linkedin"
-							/>
+							<a class="footer__social-link" href="#">
+								<img
+									class="footer__about-social-image"
+									src="./src/assets/images/social/facebook.svg"
+									alt="facebook"
+								/>
+							</a>
+							<a class="footer__social-link" href="#">
+								<img
+									class="footer__about-social-image"
+									src="./src/assets/images/social/linkedin.svg"
+									alt="linkedin"
+								/>
+							</a>
+							<a class="footer__social-link" href="#">
+								<img
+									class="footer__about-social-image"
+									src="./src/assets/images/social/twitter.svg"
+									alt="twitter"
+								/>
+							</a>
 						</address>
 					</section>
 
-					<section class="footer__navigation">
+					<nav class="footer__navigation">
 						<h3 class="footer__navigation-title">Market Place</h3>
 						<ul class="footer__navigation-list">
 							<li class="footer__navigation-list-item">
@@ -1701,10 +1755,10 @@
 								<a class="footer__navigation-link" href="#">Domain Name</a>
 							</li>
 						</ul>
-					</section>
+					</nav>
 
-					<section class="footer__navigation">
-						<h3 class="footer__navigation-title">Market Place</h3>
+					<nav class="footer__navigation">
+						<h3 class="footer__navigation-title">My Account</h3>
 						<ul class="footer__navigation-list">
 							<li class="footer__navigation-list-item">
 								<a class="footer__navigation-link" href="#">Profile</a>
@@ -1719,7 +1773,7 @@
 								<a class="footer__navigation-link" href="#">settings</a>
 							</li>
 						</ul>
-					</section>
+					</nav>
 
 					<section class="footer__stay-in-loop">
 						<h3 class="footer__stay-in-loop-title">Stay in the loop</h3>
@@ -1740,7 +1794,7 @@
 					</section>
 				</div>
 			</div>
-			<span class="footer__copyright">Copyright &copy; 2022 Avi Yansah</span>
+			<p class="footer__copyright">Copyright &copy; 2022 Avi Yansah</p>
 		</footer>
 	</body>
 </html>

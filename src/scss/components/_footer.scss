@@ -1,0 +1,138 @@
+.footer {
+	padding-top: 4.15rem;
+	padding-bottom: 1.2rem;
+
+	&__content-box {
+		@include flexWrap(space-between, flex-start);
+		flex-direction: column;
+		text-align: center;
+		border-bottom: 1px solid #f4f4f4;
+		padding-bottom: 3.45rem;
+
+		@media (min-width: 768px) {
+			flex-direction: row;
+			gap: 50px;
+			text-align: left;
+			flex-wrap: wrap;
+		}
+		@media (min-width: 1024px) {
+			flex-wrap: nowrap;
+		}
+	}
+
+	&__about {
+		flex: 0 0 30%;
+		margin-bottom: 1.35rem;
+		&-title {
+			margin-bottom: 1.35rem;
+		}
+
+		&-text {
+			color: $secondary-text-color;
+			font-size: 14px;
+			font-family: "Averta Demo PE Cutted Demo";
+			margin-bottom: 1.6rem;
+		}
+
+		&-address {
+			@include flexWrap(center, center);
+			gap: 16px;
+
+			@media (min-width: 768px) {
+				justify-content: flex-start;
+			}
+		}
+	}
+
+	&__social-link {
+		transition: scale 0.2s;
+		&:is(:hover, :focus) {
+			scale: 1.2;
+		}
+	}
+
+	&__navigation {
+		text-align: left;
+		width: 100%;
+
+		@media (min-width: 768px) {
+			width: 25%;
+		}
+		&-title {
+			margin-bottom: 1.2rem;
+			align-self: stretch;
+			display: flex;
+			justify-content: space-between;
+			&:active {
+				background: $secondary-bg-color;
+			}
+			&::after {
+				content: url("../assets/icons/down-arrow.svg");
+				@media (min-width: 768px) {
+					content: "";
+				}
+			}
+		}
+
+		&-list {
+			display: none;
+			text-transform: capitalize;
+			@media (min-width: 768px) {
+				display: block;
+			}
+		}
+
+		&-link {
+			font-size: 14px;
+			&:is(:hover, :focus) {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	&__stay-in-loop {
+		margin-top: 1.35rem;
+		@media (min-width: 768px) {
+			margin-top: 0;
+		}
+
+		&-text {
+			color: $secondary-text-color;
+			font-size: 14px;
+			margin: 1.2rem 0;
+		}
+
+		&-from {
+			display: flex;
+			border-radius: 45.595px;
+			border: 2px solid #f1f1f1;
+			background: #fff;
+			padding: 7px;
+			gap: 10px;
+
+			&-inp {
+				width: 100%;
+				border: 2px solid transparent;
+				margin: 5px 8px;
+				font-size: 12px;
+
+				&::placeholder {
+					color: #959595;
+					font-size: 12px;
+				}
+			}
+
+			.button {
+				font-size: 12px;
+			}
+		}
+	}
+
+	&__copyright {
+		margin-top: 15px;
+		text-align: center;
+		color: #a4a4a4;
+		font-size: 14px;
+		font-family: "Averta Demo PE Cutted Demo";
+	}
+}

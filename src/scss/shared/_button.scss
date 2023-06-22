@@ -8,6 +8,7 @@
 	letter-spacing: 0.065em;
 	text-transform: capitalize;
 	border: 3px solid transparent;
+	white-space: nowrap;
 
 	&:is(:hover, :focus) {
 		background-color: #2e008b;

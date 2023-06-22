@@ -1,0 +1,170 @@
+.finished-collections {
+	padding: 6.7rem 0;
+	&__title {
+		opacity: 0;
+		position: absolute;
+	}
+
+	&__content-box {
+		display: flex;
+		flex-direction: column;
+		gap: 4rem;
+		@media (min-width: 1200px) {
+			flex-direction: row;
+			gap: 0;
+		}
+	}
+
+	&__users-collections {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 2rem;
+		@media (min-width: 1200px) {
+			padding-right: 1.5rem;
+		}
+
+		@media (min-width: 768px) {
+			flex-direction: row;
+		}
+	}
+
+	&__other-collections {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+
+		.button {
+			font-size: 0.8rem;
+		}
+	}
+
+	&__more-complete {
+		display: flex;
+		flex-direction: column;
+		max-width: 100%;
+
+		&-info {
+			@include flexWrap($crossAxis: center);
+			gap: 10px;
+			margin-top: 1.6rem;
+		}
+
+		&-user-data {
+			margin-right: auto;
+		}
+	}
+
+	&__owner-username {
+		font-weight: 700;
+		font-size: 1rem;
+		color: $primary-text-color;
+	}
+
+	&__items-in-stock {
+		font-size: 14px;
+		color: $secondary-text-color;
+	}
+
+	&__more-complete-bid-title {
+		font-weight: 500;
+		font-size: 12px;
+		color: $secondary-text-color;
+	}
+
+	&__user-collection {
+		@include flexWrap($crossAxis: flex-start);
+		gap: 1rem;
+
+		.finished-collections__image {
+			max-width: 50%;
+		}
+	}
+
+	&__user-collection-details {
+		@include flexWrap($crossAxis: center);
+		gap: 8px;
+		flex-wrap: wrap;
+		margin-bottom: 0.8rem;
+		.price-label {
+			color: #00ac4f;
+			border: 1px solid #00ac4f;
+			border-radius: 6px;
+			padding: 2px 8px;
+			font-size: 12px;
+		}
+
+		.button {
+			font-size: 14px;
+		}
+	}
+
+	&__top-collections {
+		border-left: 1px solid #ececec;
+		padding-left: 1.5rem;
+		&-title {
+			font-family: "Integral CF";
+			font-weight: 700;
+		}
+
+		&-period {
+			font-weight: 700;
+			font-size: 0.9rem;
+			color: $additional-color;
+		}
+
+		&-list {
+			margin-top: 1.6rem;
+			counter-reset: counter;
+			&-item {
+				@include flexWrap($crossAxis: center);
+				padding: 0.8rem 0;
+				border-bottom: 1px solid #f0f0f0;
+				gap: 0.8rem;
+
+				&::before {
+					counter-increment: counter;
+					content: counter(counter);
+					font-weight: 700;
+					font-size: 1.2rem;
+					letter-spacing: -0.025em;
+				}
+
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+		}
+
+		&-user-details {
+			.finished-collections__owner-username {
+				font-weight: 500;
+				font-size: 16px;
+				letter-spacing: -0.025em;
+			}
+
+			.price-label {
+				font-family: "Poppins";
+				font-weight: 600;
+				font-size: 14px;
+				line-height: 103%;
+				letter-spacing: -0.025em;
+			}
+		}
+	}
+
+	&__owner-wallet-growth {
+		font-family: "Poppins";
+		font-weight: 600;
+		letter-spacing: -0.025em;
+		color: #14c8b0;
+		margin-left: auto;
+		@media (max-width: 1024px) {
+			padding-right: 20px;
+		}
+
+		&--red {
+			color: #ff002e;
+		}
+	}
+}

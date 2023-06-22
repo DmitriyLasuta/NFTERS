@@ -1,0 +1,43 @@
+.our-advantages {
+	background-color: $secondary-bg-color;
+	backdrop-filter: blur(25px);
+	padding: 5rem 0;
+	
+	&__content-box {
+		@include flexWrap(space-between, flex-start);
+		flex-direction: column;
+		gap: 2.5rem;
+
+		@media (min-width: 768px) {
+			flex-direction: row;
+		}
+	}
+
+	&__title {
+		text-align: center;
+    @media (min-width: 768px) {
+			text-align: left;
+		}
+	}
+
+	&__item {
+		display: grid;
+		grid-template-columns: 10% 85%;
+		grid-template-rows: repeat(2, auto);
+		gap: 12px 15px;
+		&-image {
+			justify-self: end;
+			grid-row: 1 / span 2;
+		}
+
+		&-title {
+			grid-column: 2;
+		}
+
+		&-text {
+			font-size: 14px;
+			line-height: 160%;
+			color: $secondary-text-color;
+		}
+	}
+}

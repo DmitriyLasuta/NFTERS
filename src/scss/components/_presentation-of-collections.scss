@@ -1,0 +1,52 @@
+.presentation-of-collections {
+	padding: 6.5rem 0;
+	background-color: $secondary-bg-color;
+	backdrop-filter: blur(25px);
+
+	&__title {
+		margin-bottom: 2.6rem;
+		text-align: center;
+
+		@media (min-width: 768px) {
+			text-align: left;
+		}
+	}
+
+	&__content-box {
+		@include flexWrap(space-between, center);
+		flex-direction: column;
+		gap: 2rem;
+
+		@media (min-width: 768px) {
+			flex-direction: row;
+		}
+	}
+
+	&__collection-images {
+		display: grid;
+		grid-template-columns: 70% auto;
+		grid-template-rows: repeat(3, auto);
+		gap: 8.25px 9.17px;
+		margin-bottom: 1.5rem;
+	}
+
+	&__collection-image:nth-child(1) {
+		grid-row: 1 / span 3;
+	}
+
+	& .button {
+		margin-left: auto;
+		font-size: 11px;
+		line-height: 14px;
+	}
+
+	&__collection-owner {
+		@include flexWrap($crossAxis: center);
+		gap: 10px;
+
+		&-username {
+			font-weight: 500;
+			font-size: 14px;
+		}
+	}
+}
