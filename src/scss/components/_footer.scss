@@ -58,18 +58,35 @@
 		@media (min-width: 768px) {
 			width: 25%;
 		}
-		&-title {
-			margin-bottom: 1.2rem;
-			align-self: stretch;
-			display: flex;
-			justify-content: space-between;
-			&:active {
-				background: $secondary-bg-color;
-			}
-			&::after {
-				content: url("../assets/icons/down-arrow.svg");
+
+		&-accordion {
+			&-btn {
+				width: 100%;
+				padding: 8px 0;
+				border-bottom: 2px solid #f4f4f4;
 				@media (min-width: 768px) {
-					content: "";
+					padding: 0;
+					border-bottom: none;
+				}
+			}
+			&-title {
+				color: $primary-text-color;
+				font-size: 18px;
+				font-weight: 700;
+				text-transform: capitalize;
+				display: inline-flex;
+				width: 100%;
+				justify-content: space-between;
+				align-items: center;
+			}
+			&-icon {
+				display: inline-block;
+				width: 16px;
+				height: 16px;
+				background: center no-repeat url("../assets/icons/down-arrow.svg");
+
+				@media (min-width: 768px) {
+					display: none;
 				}
 			}
 		}
