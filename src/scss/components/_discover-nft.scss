@@ -7,6 +7,9 @@
 
 	&__title {
 		margin-bottom: 1.9rem;
+		@media (min-width: 1024px) {
+			text-align: left;
+		}
 	}
 
 	&__categories {
@@ -150,8 +153,9 @@
 	&__card-users-photos {
 		position: absolute;
 		top: 55%;
+		left: 7%;
 
-		@media (min-width:1024px) {
+		@media (min-width: 1024px) {
 			top: 53%;
 		}
 	}

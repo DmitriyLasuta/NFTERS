@@ -1637,6 +1637,11 @@ body {
 .discover-nft__title {
   margin-bottom: 1.9rem;
 }
+@media (min-width: 1024px) {
+  .discover-nft__title {
+    text-align: left;
+  }
+}
 .discover-nft__categories {
   margin-bottom: 2rem;
 }
@@ -1753,6 +1758,7 @@ body {
 }
 .discover-nft__card-info .price-label {
   color: #00ac4f;
+  font-size: 12px;
 }
 .discover-nft__card-info-in-stock {
   color: #696969;
@@ -1794,6 +1800,7 @@ body {
 .discover-nft__card-users-photos {
   position: absolute;
   top: 55%;
+  left: 7%;
 }
 @media (min-width: 1024px) {
   .discover-nft__card-users-photos {
