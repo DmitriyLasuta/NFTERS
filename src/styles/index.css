@@ -1729,6 +1729,7 @@ body {
           flex-direction: column;
   padding: 10px;
   position: relative;
+  text-align: left;
 }
 .discover-nft__card-image {
   -ms-flex-item-align: center;
@@ -1793,6 +1794,11 @@ body {
 .discover-nft__card-users-photos {
   position: absolute;
   top: 55%;
+}
+@media (min-width: 1024px) {
+  .discover-nft__card-users-photos {
+    top: 53%;
+  }
 }
 .discover-nft__card-user-photo:nth-child(2) {
   -webkit-transform: translateX(-15px);

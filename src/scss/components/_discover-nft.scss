@@ -90,6 +90,7 @@
 		flex-direction: column;
 		padding: 10px;
 		position: relative;
+		text-align: left;
 
 		&-image {
 			align-self: center;
@@ -148,6 +149,10 @@
 	&__card-users-photos {
 		position: absolute;
 		top: 55%;
+
+		@media (min-width:1024px) {
+			top: 53%;
+		}
 	}
 
 	&__card-user-photo:nth-child(2) {
