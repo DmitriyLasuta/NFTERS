@@ -622,7 +622,7 @@ html {
 }
 
 h1 {
-  font: normal 2rem/120% "Integral CF", sans-serif;
+  font: bold 2rem/120% "Integral CF", sans-serif;
   letter-spacing: 0.05em;
 }
 
@@ -1934,6 +1934,7 @@ body {
 }
 .footer__navigation-list {
   display: none;
+  text-transform: capitalize;
 }
 @media (min-width: 768px) {
   .footer__navigation-list {
