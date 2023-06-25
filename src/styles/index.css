@@ -1283,7 +1283,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 100%;
 }
 .finished-collections__more-complete-info {
   display: -webkit-box;
@@ -1297,6 +1296,10 @@ body {
           align-items: center;
   gap: 10px;
   margin-top: 1.6rem;
+}
+.finished-collections__more-complete .finished-collections__image {
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 .finished-collections__more-complete-user-data {
   margin-right: auto;
@@ -1326,9 +1329,6 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   gap: 1rem;
-}
-.finished-collections__user-collection .finished-collections__image {
-  max-width: 50%;
 }
 .finished-collections__user-collection-details {
   display: -webkit-box;
