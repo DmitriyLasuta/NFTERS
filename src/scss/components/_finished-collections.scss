@@ -50,6 +50,10 @@
 			margin-top: 1.6rem;
 		}
 
+		.finished-collections__image {
+			align-self: center;
+		}
+
 		&-user-data {
 			margin-right: auto;
 		}
@@ -75,10 +79,6 @@
 	&__user-collection {
 		@include flexWrap($crossAxis: flex-start);
 		gap: 1rem;
-
-		.finished-collections__image {
-			max-width: 50%;
-		}
 	}
 
 	&__user-collection-details {
