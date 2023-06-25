@@ -23,8 +23,9 @@
 	&__about {
 		flex: 0 0 30%;
 		margin-bottom: 1.35rem;
+
 		&-title {
-			margin-bottom: 1.35rem;
+			margin-bottom: 1.2rem;
 		}
 
 		&-text {
@@ -78,6 +79,10 @@
 				width: 100%;
 				justify-content: space-between;
 				align-items: center;
+
+				@media (min-width:768px) {
+					margin-bottom: 1.2rem;
+				}
 			}
 			&-icon {
 				display: inline-block;

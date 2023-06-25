@@ -1,4 +1,4 @@
-.presentation {
+.banner {
 	padding: 2.5rem 0 3rem 0;
 	&__content {
 		@include flexWrap(space-between, center);
@@ -56,11 +56,10 @@
 		letter-spacing: 0.05em;
 	}
 
-	&__characteristic-label {
-	}
-
 	&__promo {
 		position: relative;
+		background-color: rgb(48, 47, 49);
+		border-radius: $images-border-radius * 2;
 		@media (min-width: 768px) {
 			transform: translateX(-15%);
 		}
@@ -68,7 +67,7 @@
 		@media (min-width: 1024px) {
 			&::before {
 				@include pseudo(
-					$content: url("../assets/images/presentation/promo-medal.png")
+					$content: url("../assets/images/banner/promo-medal.png")
 				);
 				z-index: 1;
 				top: 40%;
