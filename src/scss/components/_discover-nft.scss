@@ -150,23 +150,20 @@
 			}
 		}
 	}
-	&__card-users-photos {
+	&__card-avatar-list {
 		position: absolute;
 		top: 55%;
 		left: 7%;
 
+		display: grid;
+		grid-template-columns: repeat(4, 20px);
+
 		@media (min-width: 1024px) {
 			top: 53%;
 		}
-	}
 
-	&__card-user-photo:nth-child(2) {
-		transform: translateX(-15px);
-	}
-	&__card-user-photo:nth-child(3) {
-		transform: translateX(-25px);
-	}
-	&__card-user-photo:nth-child(4) {
-		transform: translateX(-35px);
+		.discover-nft__card-user-avatar {
+			min-width: 30px;
+		}
 	}
 }

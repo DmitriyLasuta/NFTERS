@@ -42,12 +42,15 @@
 	&__more-complete {
 		display: flex;
 		flex-direction: column;
-		max-width: 100%;
 
 		&-info {
 			@include flexWrap($crossAxis: center);
 			gap: 10px;
 			margin-top: 1.6rem;
+		}
+
+		.finished-collections__image {
+			align-self: center;
 		}
 
 		&-user-data {
@@ -75,10 +78,6 @@
 	&__user-collection {
 		@include flexWrap($crossAxis: flex-start);
 		gap: 1rem;
-
-		.finished-collections__image {
-			max-width: 50%;
-		}
 	}
 
 	&__user-collection-details {
