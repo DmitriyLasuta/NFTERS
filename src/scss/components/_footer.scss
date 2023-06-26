@@ -131,6 +131,10 @@
 			background: #fff;
 			padding: 7px;
 			gap: 10px;
+			
+			&:has(&-inp:focus) {
+				border-color: #000;
+			}
 
 			&-inp {
 				width: 100%;

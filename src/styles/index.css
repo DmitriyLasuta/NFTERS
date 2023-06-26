@@ -1986,6 +1986,9 @@ body {
   padding: 7px;
   gap: 10px;
 }
+.footer__stay-in-loop-from:has(.footer__stay-in-loop-from-inp:focus) {
+  border-color: #000;
+}
 .footer__stay-in-loop-from-inp {
   width: 100%;
   border: 2px solid transparent;
