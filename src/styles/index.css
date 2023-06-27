@@ -1910,10 +1910,16 @@ body {
   padding: 8px 0;
   border-bottom: 2px solid #f4f4f4;
 }
+.footer__navigation-accordion-btn:focus {
+  outline: 1px solid #000;
+}
 @media (min-width: 768px) {
   .footer__navigation-accordion-btn {
     padding: 0;
     border-bottom: none;
+  }
+  .footer__navigation-accordion-btn:focus {
+    outline: none;
   }
 }
 .footer__navigation-accordion-title {

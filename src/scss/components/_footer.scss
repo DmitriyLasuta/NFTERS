@@ -65,9 +65,18 @@
 				width: 100%;
 				padding: 8px 0;
 				border-bottom: 2px solid #f4f4f4;
+
+				&:focus {
+					outline: 1px solid $primary-text-color;
+				}
+
 				@media (min-width: 768px) {
 					padding: 0;
 					border-bottom: none;
+
+					&:focus {
+						outline: none;
+					}
 				}
 			}
 			&-title {
