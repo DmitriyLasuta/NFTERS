@@ -1,3 +1,3 @@
 # NFTERS
 
-https://dmitriylasuta.github.io/nfters/
+https://dmitrylasuta.github.io/nfters/
